@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,200;1,200&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Navbar Section */
 .navbar {
   width: 100%;
   height: 60px;
@@ -24,8 +27,87 @@
 }
 
 .nav-link a {
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #1c1a19;
+  width: 100%;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.main-heading {
+  font-family: "Crete Round", serif;
+  max-width: 327px;
+  max-height: 188px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.supporting-text {
+  font-family: "Roboto", sans-serif;
+  max-width: 327px;
+  max-height: 70px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.description-text {
+  font-family: "Poppins", sans-serif;
+  max-width: 327px;
+  max-height: 176px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.social-media-icons a {
+  text-decoration: none;
+  color: #dbd8d7;
+  margin-left: 20px;
+}
+
+.main-image {
+  align-self: flex-end;
+  width: 108.89px;
+  height: 312.03px;
+  margin-top: -196px;
+}
+
+/* Medium devices (tablets, 600px and up) */
+@media (min-width: 600px) {
+  .navbar {
+    width: 100%;
+    height: 92px;
+    background-color: #3c3a39;
+    display: none;
+  }
+
+  .hero-section {
+    display: none;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -34,6 +116,10 @@
     width: 100%;
     height: 92px;
     background-color: #3c3a39;
+    display: none;
+  }
+
+  .hero-section {
     display: none;
   }
 }
@@ -46,6 +132,10 @@
     background-color: #3c3a39;
     display: none;
   }
+
+  .hero-section {
+    display: none;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -54,6 +144,10 @@
     width: 100%;
     height: 92px;
     background-color: #3c3a39;
+    display: none;
+  }
+
+  .hero-section {
     display: none;
   }
 }
