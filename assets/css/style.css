@@ -83,13 +83,25 @@
   margin-right: 20px;
 }
 
+.social-media-icons {
+  display: flex;
+}
+
 .social-media-icons a {
+  list-style: none;
   text-decoration: none;
   color: #dbd8d7;
   margin-left: 20px;
 }
 
+.social-media-icons li {
+  list-style: none;
+}
+
 .main-image {
+  background-image: url("/assets/images/main-image.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   align-self: flex-end;
   width: 108.89px;
   height: 312.03px;
