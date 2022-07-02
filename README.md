@@ -4,6 +4,9 @@
 
 > This is my portfolio website where you can hire me as a web developer. I also mention all my projects which is created by me.
 
+## ScreenShot
+### Mobile View
+[![screencapture-127-0-0-1-5500-index-html-2022-07-02-11-03-30.png](https://i.postimg.cc/MpDvDSPy/screencapture-127-0-0-1-5500-index-html-2022-07-02-11-03-30.png)](https://postimg.cc/HrrYYfCx)
 
 ## Built With
 
