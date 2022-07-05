@@ -342,6 +342,105 @@ body {
   line-height: 43px;
 }
 
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 124px;
+}
+
+.contact-heading {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  width: 515px;
+  max-width: calc(100% - 20px);
+  margin-bottom: 72px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.text-field {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #dbd8d7;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 29px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+  width: 350px;
+  max-width: calc(100% - 20px);
+}
+
+.text-field:focus {
+  border-color: #6b6867;
+  outline-style: none;
+}
+
+.message-field {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+  background-color: #fbf8f7;
+  border: none;
+  margin-bottom: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.message-field:focus {
+  outline-style: none;
+}
+
+.form-control button {
+  width: 131px;
+}
+
+/* Footer Section */
+.footer hr {
+  color: #dfe1e6;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+}
+
+.footer-social-icons li a {
+  color: #505f79;
+}
+
+.footer-social-icons li {
+  margin-left: 21px;
+}
+
 /* Button Styles */
 .btn-primary {
   background-color: #ff6b00;
@@ -354,6 +453,7 @@ body {
   color: #fff;
   border: 1px solid #ff6b00;
   padding: 12px;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -411,6 +511,10 @@ button:disabled {
   .about-section {
     display: none;
   }
+
+  .contact-section {
+    display: none;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -430,6 +534,9 @@ button:disabled {
   .about-section {
     display: none;
   }
+  .contact-section {
+    display: none;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -447,6 +554,10 @@ button:disabled {
   }
 
   .about-section {
+    display: none;
+  }
+
+  .contact-section {
     display: none;
   }
 }
@@ -469,6 +580,10 @@ button:disabled {
   }
 
   .about-section {
+    display: none;
+  }
+
+  .contact-section {
     display: none;
   }
 }
