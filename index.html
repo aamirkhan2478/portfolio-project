@@ -217,13 +217,26 @@
         chat please get in touch.
       </h3>
       <form class="form-control">
-        <input placeholder="Your Name" class="text-field" type="text" />
         <input
-          placeholder="example@youremail.com"
+          placeholder="Full Name"
+          class="text-field"
+          type="text"
+          minlength="30"
+          required
+        />
+        <input
+          placeholder="Email Address"
           class="text-field"
           type="email"
+          required
         />
-        <textarea class="message-field" placeholder="Your message"></textarea>
+        <textarea
+          class="message-field"
+          placeholder="Enter text here"
+          minlength="500"
+          cols="38"
+          rows="5"
+        ></textarea>
         <button class="btn-primary">Get In Touch</button>
       </form>
     </section>
