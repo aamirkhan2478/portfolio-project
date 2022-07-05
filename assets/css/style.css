@@ -397,7 +397,7 @@ body {
 }
 
 .message-field {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -515,6 +515,10 @@ button:disabled {
   .contact-section {
     display: none;
   }
+
+  .footer {
+    display: none;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -534,7 +538,12 @@ button:disabled {
   .about-section {
     display: none;
   }
+
   .contact-section {
+    display: none;
+  }
+
+  .footer {
     display: none;
   }
 }
@@ -558,6 +567,10 @@ button:disabled {
   }
 
   .contact-section {
+    display: none;
+  }
+
+  .footer {
     display: none;
   }
 }
@@ -584,6 +597,10 @@ button:disabled {
   }
 
   .contact-section {
+    display: none;
+  }
+
+  .footer {
     display: none;
   }
 }
