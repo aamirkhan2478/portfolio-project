@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #e5e5e5;
-}
-
 /* Navbar Section */
 .navbar {
   width: 100%;
@@ -89,17 +85,46 @@ body {
 
 .social-media-icons {
   display: flex;
+  margin-left: 8px;
 }
 
 .social-media-icons a {
   list-style: none;
   text-decoration: none;
-  color: #dbd8d7;
-  margin-left: 20px;
 }
 
 .social-media-icons li {
   list-style: none;
+}
+
+.hero-github-icon {
+  background-image: url("/assets/images/hero-github.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.hero-linkedin-icon {
+  background-image: url("/assets/images/hero-linkedin.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.hero-angellist-icon {
+  background-image: url("/assets/images/hero-angellist.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.hero-twitter-icon {
+  background-image: url("/assets/images/hero-twitter.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.hero-medium-icon {
+  background-image: url("/assets/images/hero-medium.svg");
+  width: 40px;
+  height: 40px;
 }
 
 .main-image {
@@ -360,8 +385,8 @@ body {
   line-height: 44px;
   text-align: center;
   color: #172b4d;
-  width: 515px;
-  max-width: calc(100% - 20px);
+  width: 327px;
+  height: 216px;
   margin-bottom: 72px;
 }
 
@@ -379,7 +404,6 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #979493;
-  background-color: #e5e5e5;
   border-bottom: 1px solid #dbd8d7;
   border-top: none;
   border-left: none;
@@ -387,8 +411,8 @@ body {
   margin-bottom: 29px;
   padding-bottom: 11px;
   padding-left: 16px;
-  width: 350px;
-  max-width: calc(100% - 20px);
+  width: 327px;
+  height: 48px;
 }
 
 .text-field:focus {
@@ -403,13 +427,15 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #3c3a39;
-  background-color: #fbf8f7;
+  background: #fbf8f7;
   border: none;
   margin-bottom: 24px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 12px;
   padding-bottom: 12px;
+  width: 327px;
+  height: 114px;
 }
 
 .message-field:focus {
@@ -422,7 +448,7 @@ body {
 
 /* Footer Section */
 .footer hr {
-  color: #dfe1e6;
+  background: #dfe1e6;
 }
 
 .footer-social-icons {
@@ -433,12 +459,34 @@ body {
   height: 60px;
 }
 
-.footer-social-icons li a {
-  color: #505f79;
+.github-icon {
+  background-image: url("/assets/images/github.svg");
+  width: 40px;
+  height: 40px;
 }
 
-.footer-social-icons li {
-  margin-left: 21px;
+.linkedin-icon {
+  background-image: url("/assets/images/linkdn.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.angellist-icon {
+  background-image: url("/assets/images/angellist.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.twitter-icon {
+  background-image: url("/assets/images/twitter.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.medium-icon {
+  background-image: url("/assets/images/medium.svg");
+  width: 40px;
+  height: 40px;
 }
 
 /* Button Styles */
