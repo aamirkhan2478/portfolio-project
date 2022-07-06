@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #e5e5e5;
-}
-
 /* Navbar Section */
 .navbar {
   width: 100%;
@@ -89,17 +85,46 @@ body {
 
 .social-media-icons {
   display: flex;
+  margin-left: 8px;
 }
 
 .social-media-icons a {
   list-style: none;
   text-decoration: none;
-  color: #dbd8d7;
-  margin-left: 20px;
 }
 
 .social-media-icons li {
   list-style: none;
+}
+
+.hero-github-icon {
+  background-image: url("/assets/images/hero-github.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.hero-linkedin-icon {
+  background-image: url("/assets/images/hero-linkedin.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.hero-angellist-icon {
+  background-image: url("/assets/images/hero-angellist.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.hero-twitter-icon {
+  background-image: url("/assets/images/hero-twitter.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.hero-medium-icon {
+  background-image: url("/assets/images/hero-medium.svg");
+  width: 40px;
+  height: 40px;
 }
 
 .main-image {
@@ -342,6 +367,128 @@ body {
   line-height: 43px;
 }
 
+/* Contact Section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 124px;
+}
+
+.contact-heading {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  width: 327px;
+  height: 216px;
+  margin-bottom: 72px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.text-field {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+  border-bottom: 1px solid #dbd8d7;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 29px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+  width: 327px;
+  height: 48px;
+}
+
+.text-field:focus {
+  border-color: #6b6867;
+  outline-style: none;
+}
+
+.message-field {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+  background: #fbf8f7;
+  border: none;
+  margin-bottom: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 327px;
+  height: 114px;
+}
+
+.message-field:focus {
+  outline-style: none;
+}
+
+.form-control button {
+  width: 131px;
+}
+
+/* Footer Section */
+.footer hr {
+  background: #dfe1e6;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+}
+
+.github-icon {
+  background-image: url("/assets/images/github.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.linkedin-icon {
+  background-image: url("/assets/images/linkdn.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.angellist-icon {
+  background-image: url("/assets/images/angellist.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.twitter-icon {
+  background-image: url("/assets/images/twitter.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.medium-icon {
+  background-image: url("/assets/images/medium.svg");
+  width: 40px;
+  height: 40px;
+}
+
 /* Button Styles */
 .btn-primary {
   background-color: #ff6b00;
@@ -354,6 +501,7 @@ body {
   color: #fff;
   border: 1px solid #ff6b00;
   padding: 12px;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -411,6 +559,14 @@ button:disabled {
   .about-section {
     display: none;
   }
+
+  .contact-section {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -430,6 +586,14 @@ button:disabled {
   .about-section {
     display: none;
   }
+
+  .contact-section {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -447,6 +611,14 @@ button:disabled {
   }
 
   .about-section {
+    display: none;
+  }
+
+  .contact-section {
+    display: none;
+  }
+
+  .footer {
     display: none;
   }
 }
@@ -469,6 +641,14 @@ button:disabled {
   }
 
   .about-section {
+    display: none;
+  }
+
+  .contact-section {
+    display: none;
+  }
+
+  .footer {
     display: none;
   }
 }
