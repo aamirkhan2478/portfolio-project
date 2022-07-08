@@ -336,6 +336,7 @@
   width: 320px;
   margin-bottom: 24px;
 }
+
 .image-container {
   height: 43%;
   display: flex;
@@ -343,6 +344,7 @@
   align-items: end;
   justify-content: end;
 }
+
 .about-image {
   background-image: url("/assets/images/about-mob-image.svg");
   background-repeat: no-repeat;
@@ -866,6 +868,7 @@ button:disabled {
     width: 684px;
     height: 114px;
   }
+
   .contact-heading {
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -1454,6 +1457,7 @@ button:disabled {
     height: 364.38px;
     margin-bottom: -181px;
   }
+
   /* Contact Section */
   .contact-section {
     display: flex;
