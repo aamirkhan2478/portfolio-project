@@ -15,7 +15,10 @@
   height: 60px;
   background-color: #3c3a39;
 }
-
+.card:hover {
+  transition: 0.5s all;
+  transform: rotate(10deg);
+}
 .navbar {
   display: none;
   width: 100%;
