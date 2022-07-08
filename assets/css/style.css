@@ -15,10 +15,7 @@
   height: 60px;
   background-color: #3c3a39;
 }
-.card:hover {
-  transition: 0.5s all;
-  transform: rotate(10deg);
-}
+
 .navbar {
   display: none;
   width: 100%;
@@ -239,6 +236,11 @@
   border: 1px solid #8993a4;
   margin-right: 5px;
   padding: 5px;
+}
+
+.card:hover {
+  transition: 0.5s all;
+  transform: rotate(10deg);
 }
 
 .card {
@@ -1009,10 +1011,6 @@ button:disabled {
     text-decoration: none;
   }
 
-  .social-media-icons li {
-    list-style: none;
-  }
-
   .hero-github-icon {
     background-image: url("/assets/images/hero-github.svg");
     width: 40px;
@@ -1142,6 +1140,10 @@ button:disabled {
     border: 1px solid #8993a4;
     margin-right: 5px;
     padding: 5px;
+  }
+
+  .social-media-icons li {
+    list-style: none;
   }
 
   .card {
