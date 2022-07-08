@@ -115,6 +115,10 @@
   list-style: none;
 }
 
+.social-media-icons li:hover {
+  transform: rotate(10deg);
+}
+
 .hero-github-icon {
   background-image: url("/assets/images/hero-github.svg");
   width: 40px;
