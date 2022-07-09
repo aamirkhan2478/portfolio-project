@@ -16,24 +16,38 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
+      <a class="logo" href="#">John Doe</a>
       <nav class="navbar">
         <ul class="nav-flex">
-          <li class="nav-link"><a href="#">John Doe</a></li>
           <li class="nav-link">
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <a href="#">Portfolio</a>
+          </li>
+          <li class="nav-link">
+            <a href="#">About</a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Contact</a>
+          </li>
+          <li class="nav-link">
+            <a href="#"><div class="envelope"></div></a>
           </li>
         </ul>
       </nav>
+      <div class="mobile-toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
     <section class="hero-section">
-      <h1 class="main-heading">Hello There. I'm Alex</h1>
-      <h3 class="supporting-text">I'am a Software Developer</h3>
-      <p class="description-text">
-        I can help you build a product , feature or website Look through some of
-        my work and experience! If you like what you see and have a project you
-        need coded, don't hesitate to contact me.
-      </p>
+      <div class="intro-portion">
+        <h1 class="main-heading">Hey There. I'm Alex</h1>
+        <h3 class="supporting-text">I'am a Software Developer</h3>
+        <p class="description-text">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hesitate to contact me.
+        </p>
+      </div>
       <ul class="social-media-icons">
         <li>
           <a href="#"><div class="hero-github-icon"></div></a>
@@ -59,21 +73,114 @@
         <hr class="divider" />
         <div class="main-card">
           <div class="post-image"></div>
-          <h4 class="work-title-post">Multi-Post Stores</h4>
-          <p class="work-supporting-text">
+          <div class="main-card-content">
+            <h4 class="work-title-post">Multi-Post Stores</h4>
+            <p class="work-supporting-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul class="languages-list">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <div class="btn-left">
+              <button type="button" class="btn-primary">See Project</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-desktop card-1">
+          <h1 class="card-heading">Professional Art Printing Data</h1>
+          <p class="card-text">
             A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
+            sign-ups required. has been the industry's standard
           </p>
-          <ul class="languages-list">
-            <li>css</li>
+          <ul class="card-languages-list">
             <li>html</li>
             <li>bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <div class="btn-left">
-            <button type="button" class="btn-primary">See Project</button>
-          </div>
+          <button type="button" class="btn-block btn-primary btn-hidden">
+            See Project
+          </button>
+        </div>
+        <div class="card-desktop card-2">
+          <h1 class="card-heading">Professional Art Printing Data</h1>
+          <p class="card-text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
+          <ul class="card-languages-list">
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="btn-block btn-primary btn-hidden">
+            See Project
+          </button>
+        </div>
+        <div class="card-desktop card-3">
+          <h1 class="card-heading">Professional Art Printing Data</h1>
+          <p class="card-text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
+          <ul class="card-languages-list">
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="btn-block btn-primary btn-hidden">
+            See Project
+          </button>
+        </div>
+        <div class="card-desktop card-4">
+          <h1 class="card-heading">Professional Art Printing Data</h1>
+          <p class="card-text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
+          <ul class="card-languages-list">
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="btn-block btn-primary btn-hidden">
+            See Project
+          </button>
+        </div>
+        <div class="card-desktop card-5">
+          <h1 class="card-heading">Professional Art Printing Data</h1>
+          <p class="card-text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
+          <ul class="card-languages-list">
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="btn-block btn-primary btn-hidden">
+            See Project
+          </button>
+        </div>
+        <div class="card-desktop card-6">
+          <h1 class="card-heading">Professional Art Printing Data</h1>
+          <p class="card-text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
+          <ul class="card-languages-list">
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button" class="btn-block btn-primary btn-hidden">
+            See Project
+          </button>
         </div>
         <div class="card">
           <h1 class="card-heading">Professional Art Printing Data</h1>
@@ -168,16 +275,23 @@
       </div>
     </section>
     <section class="about-section">
-      <h1 class="about-heading">About me</h1>
-      <p class="about-description">
-        Hello I'm a software developer! I can help you build a product , feature
-        or website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don't hesitate to contact me.
-      </p>
-      <div class="btn-left">
-        <button type="button" class="btn-primary">Get My Resume</button>
+      <div class="about-flex">
+        <div class="about-content">
+          <h1 class="about-heading">About me</h1>
+          <p class="about-description">
+            Hello I'm a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don't
+            hesitate to contact me.
+          </p>
+          <div class="btn-left" id="btn-id">
+            <button type="button" class="btn-primary">Get My Resume</button>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="about-image"></div>
+        </div>
       </div>
-      <div class="about-image"></div>
       <hr />
       <ul class="about-list">
         <li class="language-list">
@@ -225,6 +339,7 @@
           placeholder="Full Name"
           class="text-field"
           type="text"
+          name="name"
           maxlength="30"
           required
         />
@@ -232,12 +347,15 @@
           placeholder="Email Address"
           class="text-field"
           type="email"
+          name="email"
           required
         />
         <textarea
           class="message-field"
           placeholder="Enter text here"
+          name="message"
           maxlength="500"
+          required
         ></textarea>
         <button type="submit" class="btn-primary">Get In Touch</button>
       </form>
