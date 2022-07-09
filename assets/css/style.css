@@ -239,7 +239,7 @@
 }
 
 .card {
-  background-image: url("/assets/images/card-image-1.svg");
+  background-image: url("/assets/images/card.svg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 324px;
@@ -747,7 +747,12 @@ button:disabled {
   }
 
   .card-1 {
-    background-image: url("/assets/images/card-image-1.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -756,7 +761,12 @@ button:disabled {
   }
 
   .card-2 {
-    background-image: url("/assets/images/card-image-2.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -766,7 +776,12 @@ button:disabled {
   }
 
   .card-3 {
-    background-image: url("/assets/images/card-image-3.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -775,7 +790,12 @@ button:disabled {
   }
 
   .card-4 {
-    background-image: url("/assets/images/card-image-4.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -785,7 +805,12 @@ button:disabled {
   }
 
   .card-5 {
-    background-image: url("/assets/images/card-image-2.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -794,7 +819,12 @@ button:disabled {
   }
 
   .card-6 {
-    background-image: url("/assets/images/card-image-3.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1163,7 +1193,7 @@ button:disabled {
     align-items: center;
     align-self: flex-start;
     justify-self: center;
-    background-image: url("/assets/images/card-image-1.svg");
+    background: url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1180,7 +1210,12 @@ button:disabled {
     align-items: center;
     align-self: flex-start;
     justify-self: center;
-    background-image: url("/assets/images/card-image-2.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1197,7 +1232,12 @@ button:disabled {
     align-items: center;
     align-self: flex-start;
     justify-self: center;
-    background-image: url("/assets/images/card-image-3.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1214,7 +1254,12 @@ button:disabled {
     align-items: center;
     align-self: flex-start;
     justify-self: center;
-    background-image: url("/assets/images/card-image-4.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1231,7 +1276,12 @@ button:disabled {
     align-items: center;
     align-self: flex-start;
     justify-self: center;
-    background-image: url("/assets/images/card-image-2.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1248,7 +1298,12 @@ button:disabled {
     align-items: center;
     align-self: flex-start;
     justify-self: center;
-    background-image: url("/assets/images/card-image-3.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1383,6 +1438,7 @@ button:disabled {
     margin-top: 3px;
     width: 1383px;
     max-width: calc(100% - 61px);
+    padding-bottom: 0;
   }
 
   .language-list {
