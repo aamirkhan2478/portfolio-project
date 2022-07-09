@@ -112,6 +112,10 @@
   list-style: none;
 }
 
+.social-media-icons li:hover {
+  transform: rotate(10deg);
+}
+
 .hero-github-icon {
   background-image: url("/assets/images/hero-github.svg");
   width: 40px;
@@ -232,6 +236,11 @@
   border: 1px solid #8993a4;
   margin-right: 5px;
   padding: 5px;
+}
+
+.card-desktop:hover {
+  transition: 0.5s ease-in-out;
+  transform: translate(0, 10px);
 }
 
 .card-desktop {
@@ -500,6 +509,11 @@
   align-items: center;
   list-style: none;
   height: 60px;
+}
+
+.footer-social-icons li:hover {
+  transition: 0.5 all;
+  transform: rotate(10deg);
 }
 
 .github-icon {
@@ -1061,10 +1075,6 @@ button:disabled {
     text-decoration: none;
   }
 
-  .social-media-icons li {
-    list-style: none;
-  }
-
   .hero-github-icon {
     background-image: url("/assets/images/hero-github.svg");
     width: 40px;
@@ -1194,6 +1204,10 @@ button:disabled {
     border: 1px solid #8993a4;
     margin-right: 5px;
     padding: 5px;
+  }
+
+  .social-media-icons li {
+    list-style: none;
   }
 
   .card {
