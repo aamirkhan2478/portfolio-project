@@ -238,13 +238,17 @@
   padding: 5px;
 }
 
-.card:hover {
-  transition: 0.5s all;
-  transform: rotate(10deg);
+.card-desktop:hover {
+  transition: 0.5s ease-in-out;
+  transform: translate(0, 10px);
+}
+
+.card-desktop {
+  display: none;
 }
 
 .card {
-  background-image: url("/assets/images/card-image-1.svg");
+  background-image: url("/assets/images/card.svg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 324px;
@@ -359,11 +363,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   width: 160.27px;
-  height: 258.7px;
+  height: 286.7px;
 }
 
 .about-section hr {
-  width: 572px;
+  width: 897px;
   max-width: calc(100% - 50px);
   color: #fff;
   margin-left: 24px;
@@ -507,6 +511,11 @@
   height: 60px;
 }
 
+.footer-social-icons li:hover {
+  transition: 0.5 all;
+  transform: rotate(10deg);
+}
+
 .github-icon {
   background-image: url("/assets/images/github.svg");
   width: 40px;
@@ -588,6 +597,11 @@ button:disabled {
 
 .btn-left {
   width: 322px;
+}
+
+.btn-hidden {
+  visibility: hidden;
+  height: 0;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -734,6 +748,10 @@ button:disabled {
   }
 
   .card {
+    display: none;
+  }
+
+  .card-desktop {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -742,8 +760,29 @@ button:disabled {
     align-items: center;
   }
 
+  .card-desktop:hover {
+    cursor: pointer;
+    background: url("/assets/images/card-image-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-desktop:hover button {
+    visibility: visible;
+    height: auto;
+  }
+
+  .card-desktop:hover > * {
+    visibility: hidden;
+  }
+
   .card-1 {
-    background-image: url("/assets/images/card-image-1.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -752,7 +791,12 @@ button:disabled {
   }
 
   .card-2 {
-    background-image: url("/assets/images/card-image-2.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -762,7 +806,12 @@ button:disabled {
   }
 
   .card-3 {
-    background-image: url("/assets/images/card-image-3.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -771,7 +820,12 @@ button:disabled {
   }
 
   .card-4 {
-    background-image: url("/assets/images/card-image-1.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -781,7 +835,12 @@ button:disabled {
   }
 
   .card-5 {
-    background-image: url("/assets/images/card-image-2.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -790,7 +849,12 @@ button:disabled {
   }
 
   .card-6 {
-    background-image: url("/assets/images/card-image-3.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -826,7 +890,7 @@ button:disabled {
     color: #fff;
     width: 285px;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: -7px;
   }
 
   .card-languages-list li {
@@ -1147,6 +1211,10 @@ button:disabled {
   }
 
   .card {
+    display: none;
+  }
+
+  .card-desktop {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -1157,8 +1225,29 @@ button:disabled {
     justify-self: center;
   }
 
+  .card-desktop:hover {
+    cursor: pointer;
+    background: url("/assets/images/card-image-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-desktop:hover button {
+    visibility: visible;
+    height: auto;
+  }
+
+  .card-desktop:hover > * {
+    visibility: hidden;
+  }
+
   .card-1 {
-    background-image: url("/assets/images/card-image-1.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1167,7 +1256,12 @@ button:disabled {
   }
 
   .card-2 {
-    background-image: url("/assets/images/card-image-2.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1176,7 +1270,12 @@ button:disabled {
   }
 
   .card-3 {
-    background-image: url("/assets/images/card-image-3.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1185,7 +1284,12 @@ button:disabled {
   }
 
   .card-4 {
-    background-image: url("/assets/images/card-image-1.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1194,7 +1298,12 @@ button:disabled {
   }
 
   .card-5 {
-    background-image: url("/assets/images/card-image-2.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1203,7 +1312,12 @@ button:disabled {
   }
 
   .card-6 {
-    background-image: url("/assets/images/card-image-3.svg");
+    background: linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/assets/images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1238,7 +1352,7 @@ button:disabled {
     color: #fff;
     width: 285px;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: -7px;
   }
 
   .card-languages-list li {
@@ -1264,7 +1378,7 @@ button:disabled {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    height: 1235px;
+    height: 870px;
   }
 
   .about-content {
@@ -1274,6 +1388,7 @@ button:disabled {
     align-items: center;
     margin-left: 156px;
     position: absolute;
+    margin-bottom: 213px;
   }
 
   .about-heading {
@@ -1315,12 +1430,12 @@ button:disabled {
     background-repeat: no-repeat;
     background-size: contain;
     width: 335.39px;
-    height: 204.38px;
+    height: 490.38px;
     margin-bottom: -181px;
   }
 
   .about-section hr {
-    width: 1039px;
+    width: 1558px;
     max-width: calc(100% - 300px);
     color: #fff;
     margin-top: -300px;
@@ -1337,6 +1452,7 @@ button:disabled {
     margin-top: 3px;
     width: 1383px;
     max-width: calc(100% - 61px);
+    padding-bottom: 0;
   }
 
   .language-list {
@@ -1463,7 +1579,7 @@ button:disabled {
     background-repeat: no-repeat;
     background-size: contain;
     width: 600.39px;
-    height: 364.38px;
+    height: 744.38px;
     margin-bottom: -181px;
   }
 
