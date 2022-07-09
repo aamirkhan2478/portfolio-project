@@ -2,6 +2,7 @@
   "extends": ["stylelint-config-standard"],
   "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
   "rules": {
+    "no-descending-specificity": null,
     "declaration-colon-newline-after": null,
     "indentation": null,
     "at-rule-no-unknown": null,
