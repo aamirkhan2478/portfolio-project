@@ -17,6 +17,10 @@
 - HTML
 - CSS
 
+## Live Demo
+
+[Live Demo Link](https://aamirkhan2478.github.io/aamir-portfolio.github.io/)
+
 ## Authors
 
 👤 **Author**
