@@ -326,6 +326,7 @@
   align-items: center;
   margin-left: 92px;
   position: absolute;
+  max-width: calc(100% - 187px);
 }
 
 .about-heading {
@@ -337,6 +338,7 @@
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin-bottom: 24px;
+  width: 322px;
 }
 
 .about-description {
