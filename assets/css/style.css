@@ -117,37 +117,37 @@
 }
 
 .hero-github-icon {
-  background-image: url("/assets/images/hero-github.svg");
+  background-image: url("../images/hero-github.svg");
   width: 40px;
   height: 40px;
 }
 
 .hero-linkedin-icon {
-  background-image: url("/assets/images/hero-linkedin.svg");
+  background-image: url("../images/hero-linkedin.svg");
   width: 40px;
   height: 40px;
 }
 
 .hero-angellist-icon {
-  background-image: url("/assets/images/hero-angellist.svg");
+  background-image: url("../images/hero-angellist.svg");
   width: 40px;
   height: 40px;
 }
 
 .hero-twitter-icon {
-  background-image: url("/assets/images/hero-twitter.svg");
+  background-image: url("../images/hero-twitter.svg");
   width: 40px;
   height: 40px;
 }
 
 .hero-medium-icon {
-  background-image: url("/assets/images/hero-medium.svg");
+  background-image: url("../images/hero-medium.svg");
   width: 40px;
   height: 40px;
 }
 
 .main-image {
-  background-image: url("/assets/images/main-image.svg");
+  background-image: url("../images/main-image.svg");
   background-size: contain;
   background-repeat: no-repeat;
   align-self: flex-end;
@@ -188,7 +188,7 @@
 }
 
 .post-image {
-  background-image: url("/assets/images/post-image.png");
+  background-image: url("../images/post-image.png");
   background-repeat: no-repeat;
   min-width: 327px;
   height: 237px;
@@ -248,7 +248,7 @@
 }
 
 .card {
-  background-image: url("/assets/images/card.svg");
+  background-image: url("../images/card.svg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 324px;
@@ -361,7 +361,7 @@
 }
 
 .about-image {
-  background-image: url("/assets/images/about-mob-image.svg");
+  background-image: url("../images/about-mob-image.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 160.27px;
@@ -390,7 +390,7 @@
 }
 
 .language-list {
-  list-style: square inside url("/assets/images/rotated-square.png");
+  list-style: square inside url("../images/rotated-square.png");
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -398,7 +398,7 @@
 }
 
 .frameworks-list {
-  list-style: square inside url("/assets/images/square.png");
+  list-style: square inside url("../images/square.png");
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -406,7 +406,7 @@
 }
 
 .skills-list {
-  list-style: disc inside url("/assets/images/disc.png");
+  list-style: disc inside url("../images/disc.png");
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -519,31 +519,31 @@
 }
 
 .github-icon {
-  background-image: url("/assets/images/github.svg");
+  background-image: url("../images/github.svg");
   width: 40px;
   height: 40px;
 }
 
 .linkedin-icon {
-  background-image: url("/assets/images/linkdn.svg");
+  background-image: url("../images/linkdn.svg");
   width: 40px;
   height: 40px;
 }
 
 .angellist-icon {
-  background-image: url("/assets/images/angellist.svg");
+  background-image: url("../images/angellist.svg");
   width: 40px;
   height: 40px;
 }
 
 .twitter-icon {
-  background-image: url("/assets/images/twitter.svg");
+  background-image: url("../images/twitter.svg");
   width: 40px;
   height: 40px;
 }
 
 .medium-icon {
-  background-image: url("/assets/images/medium.svg");
+  background-image: url("../images/medium.svg");
   width: 40px;
   height: 40px;
 }
@@ -645,7 +645,7 @@ button:disabled {
   }
 
   .envelope {
-    background-image: url("/assets/images/mail.svg");
+    background-image: url("../images/mail.svg");
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
@@ -699,7 +699,7 @@ button:disabled {
   }
 
   .post-image {
-    background-image: url("/assets/images/post-image.png");
+    background-image: url("../images/post-image.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 20px;
@@ -764,7 +764,7 @@ button:disabled {
 
   .card-desktop:hover {
     cursor: pointer;
-    background: url("/assets/images/card-image-1.svg");
+    background: url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -784,7 +784,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -798,7 +798,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -813,7 +813,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -827,7 +827,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -842,7 +842,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -856,7 +856,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -971,31 +971,31 @@ button:disabled {
   }
 
   .github-icon {
-    background-image: url("/assets/images/github.svg");
+    background-image: url("../images/github.svg");
     width: 40px;
     height: 40px;
   }
 
   .linkedin-icon {
-    background-image: url("/assets/images/linkdn.svg");
+    background-image: url("../images/linkdn.svg");
     width: 40px;
     height: 40px;
   }
 
   .angellist-icon {
-    background-image: url("/assets/images/angellist.svg");
+    background-image: url("../images/angellist.svg");
     width: 40px;
     height: 40px;
   }
 
   .twitter-icon {
-    background-image: url("/assets/images/twitter.svg");
+    background-image: url("../images/twitter.svg");
     width: 40px;
     height: 40px;
   }
 
   .medium-icon {
-    background-image: url("/assets/images/medium.svg");
+    background-image: url("../images/medium.svg");
     width: 40px;
     height: 40px;
   }
@@ -1078,37 +1078,37 @@ button:disabled {
   }
 
   .hero-github-icon {
-    background-image: url("/assets/images/hero-github.svg");
+    background-image: url("../images/hero-github.svg");
     width: 40px;
     height: 40px;
   }
 
   .hero-linkedin-icon {
-    background-image: url("/assets/images/hero-linkedin.svg");
+    background-image: url("../images/hero-linkedin.svg");
     width: 40px;
     height: 40px;
   }
 
   .hero-angellist-icon {
-    background-image: url("/assets/images/hero-angellist.svg");
+    background-image: url("../images/hero-angellist.svg");
     width: 40px;
     height: 40px;
   }
 
   .hero-twitter-icon {
-    background-image: url("/assets/images/hero-twitter.svg");
+    background-image: url("../images/hero-twitter.svg");
     width: 40px;
     height: 40px;
   }
 
   .hero-medium-icon {
-    background-image: url("/assets/images/hero-medium.svg");
+    background-image: url("../images/hero-medium.svg");
     width: 40px;
     height: 40px;
   }
 
   .main-image {
-    background-image: url("/assets/images/main-image-desktop.png");
+    background-image: url("../images/main-image-desktop.png");
     width: 480.81px;
     height: 763.48px;
     z-index: 50;
@@ -1158,7 +1158,7 @@ button:disabled {
   }
 
   .post-image {
-    background-image: url("/assets/images/post-image-desktop.png");
+    background-image: url("../images/post-image-desktop.png");
     background-repeat: no-repeat;
     background-size: contain;
     min-width: 524px;
@@ -1229,7 +1229,7 @@ button:disabled {
 
   .card-desktop:hover {
     cursor: pointer;
-    background: url("/assets/images/card-image-1.svg");
+    background: url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1249,7 +1249,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1263,7 +1263,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1277,7 +1277,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1291,7 +1291,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1305,7 +1305,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1319,7 +1319,7 @@ button:disabled {
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
       ),
-      url("/assets/images/card-image-1.svg");
+      url("../images/card-image-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 324px;
@@ -1428,7 +1428,7 @@ button:disabled {
   }
 
   .about-image {
-    background-image: url("/assets/images/about-desktop-image.svg");
+    background-image: url("../images/about-desktop-image.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 335.39px;
@@ -1458,7 +1458,7 @@ button:disabled {
   }
 
   .language-list {
-    list-style: square inside url("/assets/images/rotated-square.png");
+    list-style: square inside url("../images/rotated-square.png");
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -1468,7 +1468,7 @@ button:disabled {
   }
 
   .frameworks-list {
-    list-style: square inside url("/assets/images/square.png");
+    list-style: square inside url("../images/square.png");
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -1477,7 +1477,7 @@ button:disabled {
   }
 
   .skills-list {
-    list-style: disc inside url("/assets/images/disc.png");
+    list-style: disc inside url("../images/disc.png");
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -1577,7 +1577,7 @@ button:disabled {
 @media (min-width: 1200px) {
   /* About Section */
   .about-image {
-    background-image: url("/assets/images/about-desktop-image.svg");
+    background-image: url("../images/about-desktop-image.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 600.39px;
