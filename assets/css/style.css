@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --orangeColor: #ff6b00;
   --darkColor: #3c3a39;
@@ -51,10 +56,13 @@
   padding-top: 60px;
 }
 
-.nav-link a {
+.nav-link {
   list-style: none;
   border-bottom: 1px solid #fff;
   margin-top: 30px;
+}
+
+.nav-link a {
   font-family: var(--roboto);
   font-weight: 700;
   font-size: 32px;
@@ -63,6 +71,10 @@
   color: white;
   margin-left: 8px;
   margin-right: 34px;
+}
+
+.envelope {
+  display: none;
 }
 
 .logo {
@@ -77,7 +89,32 @@
   cursor: pointer;
   font-family: var(--roboto);
   color: white;
+  background: transparent;
   margin-right: 24px;
+}
+
+.mobile-toggle-btn .icon-menu {
+  width: 25px;
+  height: 20px;
+}
+
+.mobile-toggle-btn .icon-menu[name="close"] {
+  display: none;
+}
+
+.active .navbar {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.active .mobile-toggle-btn .icon-menu[name="close"] {
+  display: block;
+}
+
+.active .mobile-toggle-btn .icon-menu[name="menu"] {
+  display: none;
 }
 
 /* Hero Section */
@@ -651,19 +688,35 @@ button:disabled {
 
   .navbar {
     display: block;
+    height: 60px;
+    position: relative;
+    transform: none;
+    opacity: inherit;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-flex {
+    height: 60px;
     justify-content: flex-end;
     margin-right: 150px;
+    flex-direction: row;
+    padding-top: 10px;
+  }
+
+  .nav-flex li {
+    list-style: none;
+    border-bottom: 0;
   }
 
   .nav-link {
-    list-style: none;
+    margin-top: 0;
   }
 
   .nav-link a {
     font-family: var(--roboto);
+    font-weight: 600;
+    font-size: 15px;
     text-decoration: none;
     color: white;
     margin-left: 8px;
@@ -671,10 +724,12 @@ button:disabled {
   }
 
   .envelope {
+    display: block;
     background-image: url("../images/mail.svg");
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
+    margin-top: 10px;
   }
 
   /* Work Section */
