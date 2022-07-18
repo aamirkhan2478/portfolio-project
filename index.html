@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
@@ -14,31 +14,45 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+    <script src="./assets/js/index.js" defer></script>
   </head>
   <body>
+    <!--=============== HEADER ===============-->
     <header class="header">
       <a class="logo" href="#">Aamir Khan</a>
       <nav class="navbar">
         <ul class="nav-flex">
           <li class="nav-link">
-            <a href="#">Portfolio</a>
+            <a href="#work" class="link-nav">Portfolio</a>
           </li>
           <li class="nav-link">
-            <a href="#">About</a>
+            <a href="#about" class="link-nav">About</a>
           </li>
           <li class="nav-link">
-            <a href="#">Contact</a>
+            <a href="#contact" class="link-nav">Contact</a>
           </li>
-          <li class="nav-link">
+          <li>
             <a href="#"><div class="envelope"></div></a>
           </li>
         </ul>
       </nav>
       <div class="mobile-toggle-btn">
-        <i class="fa-solid fa-bars"></i>
+        <ion-icon name="menu" class="icon-menu"></ion-icon>
+        <ion-icon name="close" class="icon-menu"></ion-icon>
       </div>
     </header>
-    <section class="hero-section">
+
+    <!--=============== HERO SECTION===============-->
+    <section id="hero" class="hero-section">
       <div class="intro-portion">
         <h1 class="main-heading">Hey There. I'm Aamir</h1>
         <h3 class="supporting-text">I'am a Web Developer</h3>
@@ -67,7 +81,9 @@
       </ul>
       <div class="main-image"></div>
     </section>
-    <section class="work-section">
+
+    <!--=============== WORK SECTION ===============-->
+    <section id="work" class="work-section">
       <div class="grid-items">
         <h1 class="work-main-heading">My Recent Works</h1>
         <hr class="divider" />
@@ -274,7 +290,9 @@
         </div>
       </div>
     </section>
-    <section class="about-section">
+
+    <!--=============== ABOUT SECTION ===============-->
+    <section id="about" class="about-section">
       <div class="about-flex">
         <div class="about-content">
           <h1 class="about-heading">About me</h1>
@@ -325,7 +343,9 @@
         </li>
       </ul>
     </section>
-    <section class="contact-section">
+
+    <!--=============== CONTACT SECTION ===============-->
+    <section id="contact" class="contact-section">
       <h3 class="contact-heading">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
@@ -360,6 +380,8 @@
         <button type="submit" class="btn-primary">Get In Touch</button>
       </form>
     </section>
+
+    <!--=============== FOOTER ===============-->
     <footer class="footer">
       <hr />
       <ul class="footer-social-icons">
