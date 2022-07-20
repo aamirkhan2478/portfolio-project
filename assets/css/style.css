@@ -713,31 +713,33 @@ button:disabled {
 }
 
 .modal {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   margin: 20% auto;
   padding: 20px;
   width: 390px;
   height: 762px;
-  -webkit-animation-name: modalAnimation;
-  animation-name: modalAnimation;
+  -webkit-animation-name: modalanimation;
+  animation-name: modalanimation;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
 
-@-webkit-keyframes modalAnimation {
+@-webkit-keyframes modalanimation {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
-@keyframes modalAnimation {
+@keyframes modalanimation {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1279,7 +1281,7 @@ button:disabled {
     width: 900px;
     height: 631px;
   }
-  
+
   .modal-header h1 {
     font-family: var(--crete);
     font-weight: 400;
