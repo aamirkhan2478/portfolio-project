@@ -16,6 +16,7 @@
 
 - HTML
 - CSS
+- JavaScript
 
 ## Live Demo
 
@@ -23,17 +24,29 @@
 
 ## Authors
 
-👤 **Author**
+👤 **Aamir Khan**
 
 - GitHub: [@aamirkhan2478](https://github.com/aamirkhan2478)
 - Twitter: [@SmartKhan2478](https://twitter.com/SmartKhan2478)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/aamir-khan-302a44237/)
 
+👤 **Kwaleyela**
+
+- GitHub: [@Kwaleyela-ikafa](https://github.com/Kwaleyela-Ikafa)
+- Twitter: [@mvrck383](https://twitter.com/mvrck383)
+- LinkedIn: [LinkedIn](https://zm.linkedin.com/in/kwaleyela-musilizo-ikafa-abaa1a20b?trk=people-guest_people_search-card)
+
+## Contributions
+
+In the Peer Programming section of week 4, day 3 I contributed to [Kwaleyela's project portfolio-website](https://github.com/Kwaleyela-Ikafa/Portfolio-project).
+
+In the Peer Programming section of week 4, day 3 [Kwaleyela](https://github.com/Kwaleyela-Ikafa) contributed to this repo.
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/aamirkhan2478/portfolio-project/issues).
 
 ## Show your support
 
