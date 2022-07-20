@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     languages: ['MongoDB', 'Node', 'Express', 'React'],
     live: 'https://dtvsforfuuast.herokuapp.com/',
     source: 'https://github.com/aamirkhan2478',
-    img: '../Assets/images/post-image-desktop.png',
+    img: './assets/images/post-image-desktop.png',
   };
 
   // Get all data from languages array in side mainCardDetails object
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       languages: ['MongoDB', 'Node', 'Express', 'React'],
       live: 'https://dtvsforfuuast.herokuapp.com/',
       source: 'https://github.com/aamirkhan2478',
-      img: '../Assets/images/Cardimage.png',
+      img: './assets/images/Cardimage.png',
     },
     {
       id: 2,
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       languages: ['MongoDB', 'Node', 'Express', 'React'],
       live: 'https://dtvsforfuuast.herokuapp.com/',
       source: 'https://github.com/aamirkhan2478',
-      img: '../Assets/images/calculator-app.png',
+      img: './assets/images/calculator-app.png',
     },
     {
       id: 3,
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
       languages: ['MongoDB', 'Node', 'Express', 'React'],
       live: 'https://dtvsforfuuast.herokuapp.com/',
       source: 'https://github.com/aamirkhan2478',
-      img: '../Assets/images/chat-app.jpg',
+      img: './assets/images/chat-app.jpg',
     },
     {
       id: 4,
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
       languages: ['MongoDB', 'Node', 'Express', 'React'],
       live: 'https://dtvsforfuuast.herokuapp.com/',
       source: 'https://github.com/aamirkhan2478',
-      img: '../Assets/images/conference-app.jpg',
+      img: './assets/images/conference-app.jpg',
     },
     {
       id: 5,
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
       languages: ['MongoDB', 'Node', 'Express', 'React'],
       live: 'https://dtvsforfuuast.herokuapp.com/',
       source: 'https://github.com/aamirkhan2478',
-      img: '../Assets/images/counter-app.png',
+      img: './assets/images/counter-app.png',
     },
     {
       id: 6,
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
       languages: ['MongoDB', 'Node', 'Express', 'React'],
       live: 'https://dtvsforfuuast.herokuapp.com/',
       source: 'https://github.com/aamirkhan2478',
-      img: '../Assets/images/timer-app.png',
+      img: './assets/images/timer-app.png',
     },
   ];
 
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }' class='btn-primary' target='_blank'>
                           See Live
                           <span>
-                            <img  src='./Assets/images/Icon-Export.svg'
+                            <img  src='./assets/images/Icon-Export.svg'
                                   alt='live-icon'
                                   class='icon-right'
                                   height='18'/>
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }' class='btn-primary' target='_blank'>
                           See Source
                           <span>
-                          <img  src='./Assets/images/Icon-GitHub.svg'
+                          <img  src='./assets/images/Icon-GitHub.svg'
                                 alt='live-icon'
                                 class='icon-right'
                                 height='18'/>
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }' class='btn-primary' target='_blank'>
                           See Live
                           <span>
-                            <img  src='./Assets/images/Icon-Export.svg'
+                            <img  src='./assets/images/Icon-Export.svg'
                                 alt='live-icon'
                                 class='icon-right'
                                 height='18'/>
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }' class='btn-primary' target='_blank'>
                         See Source
                         <span>
-                          <img  src='./Assets/images/Icon-GitHub.svg'
+                          <img  src='./assets/images/Icon-GitHub.svg'
                               alt='live-icon'
                               class='icon-right'
                               height='18'/>
