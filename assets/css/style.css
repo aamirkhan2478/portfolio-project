@@ -828,6 +828,30 @@ button:disabled {
   display: none;
 }
 
+/* Alert */
+.alert {
+  background-color: red;
+  margin-top: 10px;
+  height: 50px;
+  width: 300px;
+  color: white;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert span .alert-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 3px;
+  margin-top: 4px;
+}
+
+.show-alert {
+  display: flex;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   /* Navbar Section */
@@ -988,8 +1012,6 @@ button:disabled {
   .card-desktop:hover {
     cursor: pointer;
     background: none;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .card-desktop:hover button {
