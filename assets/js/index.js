@@ -299,13 +299,30 @@ const submit = document.getElementById("submit");
 const alert = document.getElementById("alert-danger");
 
 const submitForm = (e) => {
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
   const str = email.value;
-  if (regex.test(str)) {
-    alert.classList.remove("show-alert");
+  if (str === str.toLowerCase()) {
+    if (regex.test(str)) {
+      alert.classList.remove("show-alert");
+    } else {
+      e.preventDefault();
+      alert.classList.add("show-alert");
+      alert.innerHTML = `
+          <span>
+            <ion-icon name="close-circle" class="alert-icon"></ion-icon>
+          </span>
+          You enter invalid email address!
+    `;
+    }
   } else {
     e.preventDefault();
     alert.classList.add("show-alert");
+    alert.innerHTML = `
+          <span>
+            <ion-icon name="close-circle" class="alert-icon"></ion-icon>
+          </span>
+          Please enter lowercase letters.
+    `;
   }
   setTimeout(() => {
     alert.classList.remove("show-alert");
