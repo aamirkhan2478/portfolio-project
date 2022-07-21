@@ -292,3 +292,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 });
+
+// Form Validation
+const email = document.getElementById("email");
+const submit = document.getElementById("submit");
+const alert = document.getElementById("alert-danger");
+
+const submitForm = (e) => {
+  let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let str = email.value;
+  if (regex.test(str)) {
+    alert.classList.remove("show-alert");
+  } else {
+    e.preventDefault();
+    alert.classList.add("show-alert");
+  }
+  setTimeout(() => {
+    alert.classList.remove("show-alert");
+  }, 2500);
+};
+
+submit.addEventListener("click", submitForm);
