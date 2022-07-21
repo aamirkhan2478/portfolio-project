@@ -988,8 +988,6 @@ button:disabled {
   .card-desktop:hover {
     cursor: pointer;
     background: none;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .card-desktop:hover button {
