@@ -1,31 +1,31 @@
 // Mobile Nav Toggle
-const mobileBtn = document.querySelector('.mobile-toggle-btn');
-const headerNav = document.querySelector('.header');
-const navLink = document.querySelectorAll('.link-nav');
+const mobileBtn = document.querySelector(".mobile-toggle-btn");
+const headerNav = document.querySelector(".header");
+const navLink = document.querySelectorAll(".link-nav");
 
-mobileBtn.addEventListener('click', () => {
-  headerNav.classList.toggle('active');
+mobileBtn.addEventListener("click", () => {
+  headerNav.classList.toggle("active");
 });
 
 [].forEach.call(navLink, (element) => {
   element.onclick = () => {
-    headerNav.classList.remove('active');
+    headerNav.classList.remove("active");
   };
 });
 
 // Implement Dynamic Functionality for cards and modal
-document.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById('myModal');
-  const gridItems = document.getElementById('grid');
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("myModal");
+  const gridItems = document.getElementById("grid");
 
   // Create a new object
   const mainCardDetails = {
-    title: 'Degree Tracking System',
-    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tota  reprehenderit incidunt quo nm! Mollitia consequatur vero distinct blanditiis obcaecati dolorib?',
-    languages: ['MongoDB', 'Node', 'Express', 'React'],
-    live: 'https://dtvsforfuuast.herokuapp.com/',
-    source: 'https://github.com/aamirkhan2478',
-    img: './assets/images/post-image-desktop.png',
+    title: "Degree Tracking System",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tota  reprehenderit incidunt quo nm! Mollitia consequatur vero distinct blanditiis obcaecati dolorib?",
+    languages: ["MongoDB", "Node", "Express", "React"],
+    live: "https://dtvsforfuuast.herokuapp.com/",
+    source: "https://github.com/aamirkhan2478",
+    img: "./assets/images/post-image-desktop.png",
   };
 
   // Get all data from languages array in side mainCardDetails object
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   // Add dynamic data in main card
-  let mainCardData = '';
+  let mainCardData = "";
   mainCardData += `
                   <h1 class='work-main-heading'>My Recent Works</h1>
                   <hr class='divider' />
@@ -59,62 +59,62 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardDetails = [
     {
       id: 1,
-      title: 'Degree Tracking system',
-      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus',
-      languages: ['MongoDB', 'Node', 'Express', 'React'],
-      live: 'https://dtvsforfuuast.herokuapp.com/',
-      source: 'https://github.com/aamirkhan2478',
-      img: './assets/images/Cardimage.png',
+      title: "Degree Tracking system",
+      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
+      languages: ["MongoDB", "Node", "Express", "React"],
+      live: "https://dtvsforfuuast.herokuapp.com/",
+      source: "https://github.com/aamirkhan2478",
+      img: "./assets/images/Cardimage.png",
     },
     {
       id: 2,
-      title: 'Calculator App',
-      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus',
-      languages: ['MongoDB', 'Node', 'Express', 'React'],
-      live: 'https://dtvsforfuuast.herokuapp.com/',
-      source: 'https://github.com/aamirkhan2478',
-      img: './assets/images/calculator-app.png',
+      title: "Calculator App",
+      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
+      languages: ["MongoDB", "Node", "Express", "React"],
+      live: "https://dtvsforfuuast.herokuapp.com/",
+      source: "https://github.com/aamirkhan2478",
+      img: "./assets/images/calculator-app.png",
     },
     {
       id: 3,
-      title: 'Chat App',
-      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus',
-      languages: ['MongoDB', 'Node', 'Express', 'React'],
-      live: 'https://dtvsforfuuast.herokuapp.com/',
-      source: 'https://github.com/aamirkhan2478',
-      img: './assets/images/chat-app.jpg',
+      title: "Chat App",
+      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
+      languages: ["MongoDB", "Node", "Express", "React"],
+      live: "https://dtvsforfuuast.herokuapp.com/",
+      source: "https://github.com/aamirkhan2478",
+      img: "./assets/images/chat-app.jpg",
     },
     {
       id: 4,
-      title: 'Conference App',
-      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus',
-      languages: ['MongoDB', 'Node', 'Express', 'React'],
-      live: 'https://dtvsforfuuast.herokuapp.com/',
-      source: 'https://github.com/aamirkhan2478',
-      img: './assets/images/conference-app.jpg',
+      title: "Conference App",
+      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
+      languages: ["MongoDB", "Node", "Express", "React"],
+      live: "https://dtvsforfuuast.herokuapp.com/",
+      source: "https://github.com/aamirkhan2478",
+      img: "./assets/images/conference-app.jpg",
     },
     {
       id: 5,
-      title: 'Counter App',
-      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus',
-      languages: ['MongoDB', 'Node', 'Express', 'React'],
-      live: 'https://dtvsforfuuast.herokuapp.com/',
-      source: 'https://github.com/aamirkhan2478',
-      img: './assets/images/counter-app.png',
+      title: "Counter App",
+      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
+      languages: ["MongoDB", "Node", "Express", "React"],
+      live: "https://dtvsforfuuast.herokuapp.com/",
+      source: "https://github.com/aamirkhan2478",
+      img: "./assets/images/counter-app.png",
     },
     {
       id: 6,
-      title: 'Timer App',
-      desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus',
-      languages: ['MongoDB', 'Node', 'Express', 'React'],
-      live: 'https://dtvsforfuuast.herokuapp.com/',
-      source: 'https://github.com/aamirkhan2478',
-      img: './assets/images/timer-app.png',
+      title: "Timer App",
+      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
+      languages: ["MongoDB", "Node", "Express", "React"],
+      live: "https://dtvsforfuuast.herokuapp.com/",
+      source: "https://github.com/aamirkhan2478",
+      img: "./assets/images/timer-app.png",
     },
   ];
 
   // Fetch all cards details from cardsDetails array of objects
-  let cardData = '';
+  let cardData = "";
   cardDetails.map((card) => {
     // Fetch languages array from a languages object
     const languagesArr = card.languages.map((lang) => `<li>${lang}</li>`);
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Add dynamic modal for main cards data
   mainModal = () => {
-    let modalDetails = '';
+    let modalDetails = "";
     modalDetails += `
                     <div class='modal'>
                       <div class='modal-header'>
@@ -214,19 +214,19 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.innerHTML = modalDetails;
 
     // Open modal
-    modal.style.display = 'block';
+    modal.style.display = "block";
 
     // Close modal
-    const closeModal = document.getElementsByClassName('modal-close-icon')[0];
-    closeModal.addEventListener('click', () => {
-      modal.style.display = 'none';
+    const closeModal = document.getElementsByClassName("modal-close-icon")[0];
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
     });
   };
 
   // Add dynamic modal details for other cards
   otherModal = (id) => {
     const data = cardDetails.find((card) => card.id === id);
-    let modalData = '';
+    let modalData = "";
     modalData += `
                   <div class='modal'>
                     <div class='modal-header'>
@@ -276,19 +276,19 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.innerHTML = modalData;
 
     // Open modal
-    modal.style.display = 'block';
+    modal.style.display = "block";
 
     // Close modal
-    const closeModal = document.getElementsByClassName('modal-close-icon')[0];
-    closeModal.addEventListener('click', () => {
-      modal.style.display = 'none';
+    const closeModal = document.getElementsByClassName("modal-close-icon")[0];
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
     });
   };
 
   // When user clicks out side of the modal, close the modal.
   document.onclick = (e) => {
     if (e.target === modal) {
-      modal.style.display = 'none';
+      modal.style.display = "none";
     }
   };
 });
@@ -299,8 +299,8 @@ const submit = document.getElementById("submit");
 const alert = document.getElementById("alert-danger");
 
 const submitForm = (e) => {
-  let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  let str = email.value;
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const str = email.value;
   if (regex.test(str)) {
     alert.classList.remove("show-alert");
   } else {

@@ -840,12 +840,14 @@ button:disabled {
   justify-content: center;
   align-items: center;
 }
+
 .alert span .alert-icon {
   height: 20px;
   width: 20px;
   margin-right: 3px;
   margin-top: 4px;
 }
+
 .show-alert {
   display: flex;
 }
