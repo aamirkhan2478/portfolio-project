@@ -330,3 +330,14 @@ const submitForm = (e) => {
 };
 
 submit.addEventListener("click", submitForm);
+
+//Store data in localStorage 
+
+changeHandler = () => { 
+  let field = { 
+    name: fullName.value, 
+    email: email.value, 
+    message: message.value, 
+  }; 
+  localStorage.setItem("user", JSON.stringify(field)); 
+}; 
