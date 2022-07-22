@@ -331,13 +331,30 @@ const submitForm = (e) => {
 
 submit.addEventListener("click", submitForm);
 
-//Store data in localStorage 
+// Store data in localStorage
+const fullName = document.getElementById("fullName");
+const message = document.getElementById("message");
+const reset = document.getElementById("reset");
 
-changeHandler = () => { 
-  let field = { 
-    name: fullName.value, 
-    email: email.value, 
-    message: message.value, 
-  }; 
-  localStorage.setItem("user", JSON.stringify(field)); 
-}; 
+changeHandler = () => {
+  const field = {
+    name: fullName.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem("user", JSON.stringify(field));
+};
+
+const user = JSON.parse(localStorage.getItem("user"));
+email.value = user.email;
+fullName.value = user.name;
+message.value = user.message;
+
+const resetFrom = () => {
+  email.value = "";
+  fullName.value = "";
+  message.value = "";
+  localStorage.removeItem("user");
+};
+
+reset.addEventListener("click", resetFrom);

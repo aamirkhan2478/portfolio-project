@@ -156,21 +156,26 @@
           class="text-field"
           type="text"
           name="name"
+          id="fullName"
+          onchange="changeHandler()"
           maxlength="30"
           required
         />
         <input
           placeholder="Email Address"
           class="text-field"
-          id="email"
           type="email"
           name="email"
+          id="email"
+          onchange="changeHandler()"
           required
         />
         <textarea
           class="message-field"
           placeholder="Enter text here"
           name="message"
+          id="message"
+          onchange="changeHandler()"
           maxlength="500"
           required
         ></textarea>
