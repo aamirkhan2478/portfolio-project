@@ -350,7 +350,8 @@ email.value = user.email;
 fullName.value = user.name;
 message.value = user.message;
 
-const resetFrom = () => {
+const resetFrom = (e) => {
+  e.preventDefault();
   email.value = "";
   fullName.value = "";
   message.value = "";
