@@ -7,10 +7,8 @@ mobileBtn.addEventListener("click", () => {
   headerNav.classList.toggle("active");
 });
 
-[].forEach.call(navLink, (element) => {
-  element.onclick = () => {
-    headerNav.classList.remove("active");
-  };
+navLink.addEventListener("click", () => {
+  headerNav.classList.remove("active");
 });
 
 // Implement Dynamic Functionality for cards and modal
