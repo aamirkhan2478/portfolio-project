@@ -21,16 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Create a new object
   const mainCardDetails = {
     title: "Degree Tracking System",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tota  reprehenderit incidunt quo nm! Mollitia consequatur vero distinct blanditiis obcaecati dolorib?",
+    desc: "This system will allow the students to track their degree and check the status of their application of degree.",
     languages: ["MongoDB", "Node", "Express", "React"],
     live: "https://dtvsforfuuast.herokuapp.com/",
-    source: "https://github.com/aamirkhan2478",
-    img: "./assets/images/post-image-desktop.png",
+    source: "#",
+    img: "./assets/images/Cardimage.png",
   };
 
   // Get all data from languages array in side mainCardDetails object
   const languagesArr = mainCardDetails.languages.map(
-    (language) => `<li>${language}</li>`,
+    (language) => `<li>${language}</li>`
   );
 
   // Add dynamic data in main card
@@ -59,57 +59,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardDetails = [
     {
       id: 1,
-      title: "Degree Tracking system",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
-      languages: ["MongoDB", "Node", "Express", "React"],
-      live: "https://dtvsforfuuast.herokuapp.com/",
-      source: "https://github.com/aamirkhan2478",
-      img: "./assets/images/Cardimage.png",
+      title: "Learn Web",
+      desc: "In this website you will learn how to create a web application. This is live conference website where you can learn more how to create a web application",
+      languages: ["HTML", "CSS", "JS"],
+      live: "https://aamirkhan2478.github.io/learnweb.github.io/",
+      source: "https://github.com/aamirkhan2478/learn-web",
+      img: "./assets/images/learnWeb.png",
     },
     {
       id: 2,
-      title: "Calculator App",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
-      languages: ["MongoDB", "Node", "Express", "React"],
-      live: "https://dtvsforfuuast.herokuapp.com/",
-      source: "https://github.com/aamirkhan2478",
-      img: "./assets/images/calculator-app.png",
+      title: "Todo App",
+      desc: "In this app, you can create your todos list and also you can check your todos.",
+      languages: ["HTML", "CSS", "JS"],
+      live: "https://aamirkhan2478.github.io/todo-list.github.io/",
+      source: "https://github.com/aamirkhan2478/todo-list",
+      img: "./assets/images/todo-list.png",
     },
     {
       id: 3,
-      title: "Chat App",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
-      languages: ["MongoDB", "Node", "Express", "React"],
-      live: "https://dtvsforfuuast.herokuapp.com/",
-      source: "https://github.com/aamirkhan2478",
-      img: "./assets/images/chat-app.jpg",
-    },
-    {
-      id: 4,
-      title: "Conference App",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
-      languages: ["MongoDB", "Node", "Express", "React"],
-      live: "https://dtvsforfuuast.herokuapp.com/",
-      source: "https://github.com/aamirkhan2478",
-      img: "./assets/images/conference-app.jpg",
-    },
-    {
-      id: 5,
-      title: "Counter App",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
-      languages: ["MongoDB", "Node", "Express", "React"],
-      live: "https://dtvsforfuuast.herokuapp.com/",
-      source: "https://github.com/aamirkhan2478",
-      img: "./assets/images/counter-app.png",
-    },
-    {
-      id: 6,
-      title: "Timer App",
-      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totamreprehenderit incidunt quo nam Mollitia consequatur vero distinctio anditiis obcaecati doloribus",
-      languages: ["MongoDB", "Node", "Express", "React"],
-      live: "https://dtvsforfuuast.herokuapp.com/",
-      source: "https://github.com/aamirkhan2478",
-      img: "./assets/images/timer-app.png",
+      title: "Awesome Books",
+      desc: "In this website you can add your favorite books and save it and see it as you want.",
+      languages: ["HTML", "CSS", "JS"],
+      live: "https://aamirkhan2478.github.io/awesome-books/",
+      source: "https://github.com/aamirkhan2478/awsome-books-es6.git",
+      img: "./assets/images/awesome-books.png",
     },
   ];
 
@@ -118,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
   cardDetails.map((card) => {
     // Fetch languages array from a languages object
     const languagesArr = card.languages.map((lang) => `<li>${lang}</li>`);
-
+    
     // Add dynamic in other cards
     cardData += `
                 <div class='card-desktop' id='card-image-${card.id}'>
@@ -171,8 +144,8 @@ document.addEventListener("DOMContentLoaded", () => {
                       </div>
                       <ul class='modal-languages-list'>
                         ${mainCardDetails.languages.map(
-    (lang) => `<li>${lang}</li>`,
-  )}
+                          (lang) => `<li>${lang}</li>`
+                        )}
                       </ul>
                       <div class='modal-content'>
                         <div class='modal-image-mobile'>
@@ -185,8 +158,8 @@ document.addEventListener("DOMContentLoaded", () => {
                       </div>
                       <div class='buttons'>
                         <a href='${
-  mainCardDetails.live
-}' class='btn-primary' target='_blank'>
+                          mainCardDetails.live
+                        }' class='btn-primary' target='_blank'>
                           See Live
                           <span>
                             <img  src='./assets/images/Icon-Export.svg'
@@ -196,8 +169,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             </span>
                         </a>
                         <a href='${
-  mainCardDetails.source
-}' class='btn-primary' target='_blank'>
+                          mainCardDetails.source
+                        }' class='btn-primary' target='_blank'>
                           See Source
                           <span>
                           <img  src='./assets/images/Icon-GitHub.svg'
@@ -247,8 +220,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class='buttons'>
                       <a href='${
-  data.live
-}' class='btn-primary' target='_blank'>
+                        data.live
+                      }' class='btn-primary' target='_blank'>
                           See Live
                           <span>
                             <img  src='./assets/images/Icon-Export.svg'
@@ -258,8 +231,8 @@ document.addEventListener("DOMContentLoaded", () => {
                           </span>
                       </a>
                       <a href='${
-  data.source
-}' class='btn-primary' target='_blank'>
+                        data.source
+                      }' class='btn-primary' target='_blank'>
                         See Source
                         <span>
                           <img  src='./assets/images/Icon-GitHub.svg'

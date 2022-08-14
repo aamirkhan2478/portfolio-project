@@ -692,6 +692,13 @@ button:disabled {
 .btn-block {
   width: 327px;
   height: 48px;
+  border-color: #fff5e1;
+}
+
+.btn-block:hover {
+  background-color: #f7bd4a;
+  border-color: #fff5e1;
+  color: white;
 }
 
 .btn-left {
@@ -951,8 +958,9 @@ button:disabled {
   .post-image {
     margin-right: 20px;
     align-self: normal;
-    width: 540px;
-    height: 426px;
+    width: 458px;
+    height: 498px;
+    margin-top: 197px;
   }
 
   .work-title-post {
@@ -984,6 +992,7 @@ button:disabled {
     align-items: flex-end;
     position: relative;
     overflow: hidden;
+    height: 386px;
   }
 
   .card-desktop img {
@@ -1025,37 +1034,31 @@ button:disabled {
 
   #card-image-1 {
     max-width: 324px;
-    height: 386px;
     grid-area: card1;
   }
 
   #card-image-2 {
     max-width: 324px;
-    height: 386px;
     grid-area: card2;
   }
 
   #card-image-3 {
     max-width: 324px;
-    height: 386px;
     grid-area: card3;
   }
 
   #card-image-4 {
     max-width: 324px;
-    height: 386px;
     grid-area: card4;
   }
 
   #card-image-5 {
     max-width: 324px;
-    height: 386px;
     grid-area: card5;
   }
 
   #card-image-6 {
     max-width: 324px;
-    height: 386px;
     grid-area: card6;
   }
 
@@ -1147,14 +1150,17 @@ button:disabled {
 
   /* Work Section */
   .grid-items {
-    grid-template-rows: 400px 400px 400px 400px;
+    grid-template-rows: repeat(1, 1fr);
     grid-template-columns: 350px 300px 350px;
     grid-template-areas:
       "heading divider divider"
       "main main main"
       "card1 card2 card3"
-      "card4 card5 card6";
+      "card4 card5 card6"
+      "card7 card8 card9"
+      "card10 card11 card12";
     grid-column-gap: 17px;
+    margin-top: 80px;
   }
 
   .work-main-heading {
@@ -1174,8 +1180,8 @@ button:disabled {
   }
 
   .post-image {
-    width: 634px;
-    height: 512px;
+    width: 552px;
+    object-fit: contain;
   }
 
   .card-desktop {
@@ -1205,6 +1211,16 @@ button:disabled {
 
   #card-image-6 {
     grid-area: card6;
+  }
+
+  #card-image-7 {
+    grid-area: card7;
+  }
+  #card-image-8 {
+    grid-area: card8;
+  }
+  #card-image-9 {
+    grid-area: card9;
   }
 
   /* About Section */
