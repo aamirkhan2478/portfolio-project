@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Get all data from languages array in side mainCardDetails object
   const languagesArr = mainCardDetails.languages.map(
-    (language) => `<li>${language}</li>`
+    (language) => `<li>${language}</li>`,
   );
 
   // Add dynamic data in main card
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
   cardDetails.map((card) => {
     // Fetch languages array from a languages object
     const languagesArr = card.languages.map((lang) => `<li>${lang}</li>`);
-    
+
     // Add dynamic in other cards
     cardData += `
                 <div class='card-desktop' id='card-image-${card.id}'>
@@ -144,8 +144,8 @@ document.addEventListener("DOMContentLoaded", () => {
                       </div>
                       <ul class='modal-languages-list'>
                         ${mainCardDetails.languages.map(
-                          (lang) => `<li>${lang}</li>`
-                        )}
+    (lang) => `<li>${lang}</li>`,
+  )}
                       </ul>
                       <div class='modal-content'>
                         <div class='modal-image-mobile'>
@@ -158,8 +158,8 @@ document.addEventListener("DOMContentLoaded", () => {
                       </div>
                       <div class='buttons'>
                         <a href='${
-                          mainCardDetails.live
-                        }' class='btn-primary' target='_blank'>
+  mainCardDetails.live
+}' class='btn-primary' target='_blank'>
                           See Live
                           <span>
                             <img  src='./assets/images/Icon-Export.svg'
@@ -169,8 +169,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             </span>
                         </a>
                         <a href='${
-                          mainCardDetails.source
-                        }' class='btn-primary' target='_blank'>
+  mainCardDetails.source
+}' class='btn-primary' target='_blank'>
                           See Source
                           <span>
                           <img  src='./assets/images/Icon-GitHub.svg'
@@ -220,8 +220,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class='buttons'>
                       <a href='${
-                        data.live
-                      }' class='btn-primary' target='_blank'>
+  data.live
+}' class='btn-primary' target='_blank'>
                           See Live
                           <span>
                             <img  src='./assets/images/Icon-Export.svg'
@@ -231,8 +231,8 @@ document.addEventListener("DOMContentLoaded", () => {
                           </span>
                       </a>
                       <a href='${
-                        data.source
-                      }' class='btn-primary' target='_blank'>
+  data.source
+}' class='btn-primary' target='_blank'>
                         See Source
                         <span>
                           <img  src='./assets/images/Icon-GitHub.svg'
@@ -264,6 +264,19 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.style.display = "none";
     }
   };
+
+  new Typed(".auto-change", {
+    strings: [
+      "Web Developer",
+      "MERN Stack Developer",
+      "Full Stack Developer",
+      "Front-end Developer",
+      "React Native Developer",
+    ],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+  });
 });
 
 // Form Validation

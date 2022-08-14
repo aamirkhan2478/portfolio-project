@@ -9,9 +9,10 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -132,6 +133,12 @@ a{
   gap: 12px;
 }
 
+.hero-section a {
+  width: 150px;
+  margin-left: 20px;
+  margin-bottom: -20px;
+}
+
 .main-heading {
   font-family: var(--crete);
   max-width: 327px;
@@ -179,7 +186,6 @@ a{
 
 .social-media-icons a {
   list-style: none;
-  text-decoration: none;
 }
 
 .social-media-icons li {
@@ -1096,6 +1102,11 @@ button:disabled {
     height: 870px;
   }
 
+  .hero-section a {
+    margin-left: 105px;
+    margin-top: 310px;
+  }
+
   .intro-portion {
     display: flex;
     flex-direction: column;
@@ -1112,7 +1123,7 @@ button:disabled {
 
   .supporting-text {
     font-family: var(--inter);
-    max-width: 401px;
+    max-width: 501px;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
@@ -1218,9 +1229,11 @@ button:disabled {
   #card-image-7 {
     grid-area: card7;
   }
+
   #card-image-8 {
     grid-area: card8;
   }
+
   #card-image-9 {
     grid-area: card9;
   }
