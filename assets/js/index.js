@@ -331,10 +331,16 @@ changeHandler = () => {
   localStorage.setItem("user", JSON.stringify(field));
 };
 
-const user = JSON.parse(localStorage.getItem("user"));
-email.value = user.email;
-fullName.value = user.name;
-message.value = user.message;
+if (localStorage.getItem("user") === null) {
+  email.value = "";
+  fullName.value = "";
+  message.value = "";
+} else {
+  const user = JSON.parse(localStorage.getItem("user"));
+  email.value = user.email;
+  fullName.value = user.name;
+  message.value = user.message;
+}
 
 const resetFrom = (e) => {
   e.preventDefault();

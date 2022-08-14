@@ -1104,14 +1104,14 @@ button:disabled {
 
   .hero-section a {
     margin-left: 105px;
-    margin-top: 310px;
+    margin-top: 350px;
   }
 
   .intro-portion {
     display: flex;
     flex-direction: column;
     margin-left: 87px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
     position: absolute;
   }
 
