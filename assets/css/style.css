@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+a{
+  text-decoration: none;
+}
+
 :root {
   --orangeColor: #ff6b00;
   --darkColor: #3c3a39;
@@ -229,8 +233,6 @@ body {
 /* Work Section */
 .grid-items {
   display: grid;
-  grid-template-rows: 162px 50px 1fr 404px 404px 404px 404px 404px 404px;
-  grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
 }
@@ -918,7 +920,7 @@ button:disabled {
 
   /* Work Section */
   .grid-items {
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "heading divider"
