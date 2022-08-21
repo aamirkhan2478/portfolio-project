@@ -2,9 +2,11 @@
 const mobileBtn = document.querySelector(".mobile-toggle-btn");
 const headerNav = document.querySelector(".header");
 const navLink = document.querySelectorAll(".link-nav");
+const profilePic = document.querySelector(".profile-pic");
 
 mobileBtn.addEventListener("click", () => {
   headerNav.classList.toggle("active");
+  profilePic.classList.toggle("hide-profile");
 });
 
 [].forEach.call(navLink, (element) => {

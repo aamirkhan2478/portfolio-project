@@ -867,6 +867,31 @@ button:disabled {
   display: flex;
 }
 
+.hide-profile {
+  display: none;
+}
+
+.profile-pic {
+  background-image: url("../images/profile\ pic.jpg");
+  background-position: center;
+  background-size: contain;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  border-radius: 50%;
+  margin: 0 0 350px 300px;
+  border: 1px solid var(--orangeColor);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .profile-pic {
+    height: 120px;
+    width: 120px;
+    margin: 0 0 400px 315px;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   /* Navbar Section */
@@ -1161,6 +1186,12 @@ button:disabled {
     position: absolute;
   }
 
+  .profile-pic {
+    height: 160px;
+    width: 160px;
+    margin: 0 0 270px 500px;
+  }
+
   /* Work Section */
   .grid-items {
     grid-template-rows: repeat(1, 1fr);
@@ -1353,10 +1384,6 @@ button:disabled {
   .modal-content img {
     width: 503px;
     height: 356px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: top;
-    object-position: top;
     margin-top: 30px;
   }
 
