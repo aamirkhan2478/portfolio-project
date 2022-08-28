@@ -27,7 +27,9 @@ a {
   --poppins: "Poppins", sans-serif;
 }
 
-/* Navbar Section */
+/* ==========================
+        Navbar Section
+  ========================= */
 .header {
   display: flex;
   justify-content: space-between;
@@ -122,7 +124,9 @@ a {
   display: none;
 }
 
-/* Hero Section */
+/* ==========================
+        Hero Section
+  ========================= */
 .hero-section {
   background-color: var(--blackColor);
   width: 100%;
@@ -236,7 +240,9 @@ a {
   margin-top: -196px;
 }
 
-/* Work Section */
+/* ==========================
+        Work Section
+  ========================= */
 .grid-items {
   display: grid;
   justify-items: center;
@@ -408,7 +414,9 @@ a {
   padding: 5px;
 }
 
-/* About Section */
+/* ==========================
+        About Section
+  ========================= */
 .about-section {
   background-color: var(--blackColor);
 }
@@ -526,7 +534,9 @@ a {
   line-height: 43px;
 }
 
-/* Contact Section */
+/* ==========================
+        Contact Section
+  ========================= */
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -605,7 +615,9 @@ a {
   width: 131px;
 }
 
-/* Footer Section */
+/* ==========================
+        Footer Section
+  ========================= */
 .footer hr {
   background: #dfe1e6;
 }
@@ -653,7 +665,9 @@ a {
   height: 40px;
 }
 
-/* Button Styles */
+/* ==========================
+        Button Styles
+  ========================= */
 .btn-primary {
   background-color: var(--orangeColor);
   font-family: var(--inter);
@@ -718,7 +732,9 @@ button:disabled {
   height: 0;
 }
 
-/* Modal */
+/* ==========================
+            Modal
+  ========================= */
 .modal-container {
   display: none;
   position: fixed;
@@ -843,7 +859,9 @@ button:disabled {
   display: none;
 }
 
-/* Alert */
+/* ==========================
+            Alert
+  ========================= */
 .alert {
   background-color: red;
   margin-top: 10px;
@@ -883,7 +901,22 @@ button:disabled {
   border: 1px solid var(--orangeColor);
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* ===========================
+          ScrollBar
+=========================== */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #eaeaea;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orangeColor);
+  border-radius: 5px;
+}
+
+/* ===========================
+        Small devices
+=========================== */
 @media (min-width: 576px) {
   .profile-pic {
     height: 120px;
@@ -892,9 +925,13 @@ button:disabled {
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* ===========================
+        Medium devices
+=========================== */
 @media (min-width: 768px) {
-  /* Navbar Section */
+  /* ========================
+         Navbar Section
+  ========================= */
   .mobile-toggle-btn {
     display: none;
   }
@@ -949,7 +986,9 @@ button:disabled {
     margin-top: 10px;
   }
 
-  /* Work Section */
+  /* ==========================
+          Work Section
+  ========================= */
   .grid-items {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -1099,7 +1138,9 @@ button:disabled {
     margin-bottom: -7px;
   }
 
-  /* Contact Section */
+  /* ==========================
+        Contact Section
+  ========================= */
   .text-field {
     width: 684px;
     height: 48px;
@@ -1120,9 +1161,13 @@ button:disabled {
   }
 }
 
-/* // Large devices (desktops, 992px and up) */
+/* ==========================
+        Large devices
+  ========================= */
 @media (min-width: 992px) {
-  /* Hero Section */
+  /* ==========================
+        Hero Section
+  ========================= */
   .hero-section {
     height: 870px;
   }
@@ -1192,7 +1237,9 @@ button:disabled {
     margin: 0 0 270px 500px;
   }
 
-  /* Work Section */
+  /* ==========================
+        Work Section
+  ========================= */
   .grid-items {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: 350px 300px 350px;
@@ -1269,7 +1316,9 @@ button:disabled {
     grid-area: card9;
   }
 
-  /* About Section */
+  /* ==========================
+        About Section
+  ========================= */
   .about-flex {
     height: 870px;
   }
@@ -1337,7 +1386,9 @@ button:disabled {
     text-align: justify;
   }
 
-  /* Contact Section */
+  /* ==========================
+        Contact Section
+  ========================= */
   .contact-section {
     flex-direction: row;
   }
@@ -1360,7 +1411,9 @@ button:disabled {
     width: 572px;
   }
 
-  /* Modal */
+  /* ==========================
+            Modal
+  ========================= */
   .modal {
     width: 1000px;
     max-width: calc(100% - 20px);
@@ -1416,15 +1469,21 @@ button:disabled {
   }
 }
 
-/* // X-Large devices (large desktops, 1200px and up) */
+/* ==========================
+        X-Large devices
+  ========================= */
 @media (min-width: 1200px) {
-  /* About Section */
+  /* ==========================
+        About Section
+  ========================= */
   .about-image {
     width: 600.39px;
     height: 744.38px;
   }
 
-  /* Contact Section */
+  /* ==========================
+        Contact Section
+  ========================= */
   .contact-heading {
     font-size: 40px;
     line-height: 52px;

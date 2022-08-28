@@ -81,10 +81,19 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 3,
       title: "Awesome Books",
       desc: "In this website you can add your favorite books and save it and see it as you want.",
-      languages: ["HTML", "CSS", "JS"],
+      languages: ["HTML", "BOOTSTRAP", "JS"],
       live: "https://aamirkhan2478.github.io/awesome-books/",
       source: "https://github.com/aamirkhan2478/awsome-books-es6.git",
       img: "./assets/images/awesome-books.png",
+    },
+    {
+      id: 4,
+      title: "Leader Board",
+      desc: "In this website you will add scores and also see your scores and i used api for post and get data.",
+      languages: ["HTML", "BOOTSTRAP", "JS"],
+      live: "https://aamirkhan2478.github.io/leader-board/dist/",
+      source: "https://github.com/aamirkhan2478/leader-board",
+      img: "./assets/images/leader-board.png",
     },
   ];
 
