@@ -23,17 +23,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // Create a new object
   const mainCardDetails = {
     title: "Degree Tracking System",
-    desc: "This system will allow the students to track their degree and check the status of their application of degree.",
-    languages: ["MongoDB", "Node", "Express", "React"],
+    desc: "Degree tracking system will allow the students to track their degree and check the status of their application of degree. This will facilitate both the students and the university administration. In past the process of applying and receiving the degree was manual. That takes lot of time and many students have to come to university again and again to check the status of their degree but this system will allow the students to check their degree status by sitting at home.",
+    languages: ["MongoDB", "NodeJS", "ExpressJS", "ReactJS"],
     live: "https://dtvsforfuuast.herokuapp.com/",
     source: "#",
     img: "./assets/images/Cardimage.png",
   };
 
+  const {
+    title, desc, languages, live, source, img,
+  } = mainCardDetails;
   // Get all data from languages array in side mainCardDetails object
-  const languagesArr = mainCardDetails.languages.map(
-    (language) => `<li>${language}</li>`,
-  );
+  const languagesArr = languages.map((language) => `<li>${language}</li>`);
 
   // Add dynamic data in main card
   let mainCardData = "";
@@ -41,11 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
                   <h1 class='work-main-heading'>My Recent Works</h1>
                   <hr class='divider' />
                   <div class='main-card' id='main'>
-                    <img src=${mainCardDetails.img} class='post-image'/>
+                    <img src=${img} class='post-image'/>
                     <div class='main-card-content'>
-                      <h4 class='work-title-post'>${mainCardDetails.title}</h4>
+                      <h4 class='work-title-post'>${title}</h4>
                       <p class='work-supporting-text'>
-                        ${mainCardDetails.desc}
+                      ${desc.slice(0, 100)} ...
                       </p>
                       <ul class='languages-list'>
                         ${languagesArr}
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 1,
       title: "Learn Web",
-      desc: "In this website you will learn how to create a web application. This is live conference website where you can learn more how to create a web application",
+      desc: "In this website you will learn how to create a web application. This is live conference website where you can learn more how to create a web application. This website is just a simple example of a web application. You can learn more about how to create a web application and see my source code too.",
       languages: ["HTML", "CSS", "JS"],
       live: "https://aamirkhan2478.github.io/learnweb.github.io/",
       source: "https://github.com/aamirkhan2478/learn-web",
@@ -71,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 2,
       title: "Todo App",
-      desc: "In this app, you can create your todos list and also you can check your todos.",
+      desc: "In this app, you can create your todo tasks and also you can check your todo tasks. You can remove one task and also multiple tasks and you can also edit these todo tasks.",
       languages: ["HTML", "CSS", "JS"],
       live: "https://aamirkhan2478.github.io/todo-list.github.io/",
       source: "https://github.com/aamirkhan2478/todo-list",
@@ -80,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 3,
       title: "Awesome Books",
-      desc: "In this website you can add your favorite books and save it and see it as you want.",
+      desc: "In this website you can add your favorite books and also see your favorite list of books. You can also delete the book you added mistakenly. You can also check the list of books you have already.",
       languages: ["HTML", "BOOTSTRAP", "JS"],
       live: "https://aamirkhan2478.github.io/awesome-books/",
       source: "https://github.com/aamirkhan2478/awsome-books-es6.git",
@@ -89,49 +90,60 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       id: 4,
       title: "Leader Board",
-      desc: "In this website you will add scores and also see your scores and i used api for post and get data.",
+      desc: "In this website you will add scores and also see your scores and I am using a api for fetch the data from api and also add data to the api.",
       languages: ["HTML", "BOOTSTRAP", "JS"],
       live: "https://aamirkhan2478.github.io/leader-board/dist/",
       source: "https://github.com/aamirkhan2478/leader-board",
       img: "./assets/images/leader-board.png",
+    },
+    {
+      id: 5,
+      title: "Meals Capstone",
+      desc: "This is JavaScript Module capstone project, In this Project We have created website for Meals info, commenting and reservation of meals. We have used Webpack as bundler, Linters for error checking, Jest library for testing functions. We have used API to fetch data also for likes, comments and reservation.",
+      languages: ["HTML", "CSS", "JS"],
+      live: "https://edi-sipka.github.io/meals_capstone/dist/",
+      source: "https://github.com/edi-sipka/meals_capstone",
+      img: "./assets/images/meals-capstone.png",
     },
   ];
 
   // Fetch all cards details from cardsDetails array of objects
   let cardData = "";
   cardDetails.map((card) => {
+    const {
+      id, img, title, desc, languages,
+    } = card;
     // Fetch languages array from a languages object
-    const languagesArr = card.languages.map((lang) => `<li>${lang}</li>`);
-
+    const languagesArr = languages.map((lang) => `<li>${lang}</li>`);
     // Add dynamic in other cards
     cardData += `
-                <div class='card-desktop' id='card-image-${card.id}'>
-                  <img src='${card.img}' alt='card image' />
+                <div class='card-desktop' id='card-image-${id}'>
+                  <img src='${img}' alt='card image' />
                   <div class='card-info'>
-                    <h1 class='card-heading'>${card.title}</h1>
-                    <p class='card-text'>${card.desc}</p>
+                    <h1 class='card-heading'>${title}</h1>
+                    <p class='card-text'>${desc.slice(0, 100)} ...</p>
                     <ul class='card-languages-list'>
                       ${languagesArr}
                     </ul>
                     <button
                       class='btn-block btn-primary btn-hidden'
-                      onclick='otherModal(${card.id})'
+                      onclick='otherModal(${id})'
                     >
                       See Project
                     </button>
                   </div>
                 </div>
                 <div class='card'>
-                  <img src='${card.img}' alt='card image' />
+                  <img src='${img}' alt='card image' />
                   <div class='card-info'>
-                    <h1 class='card-heading'>${card.title}</h1>
-                    <p class='card-text'>${card.desc}</p>
+                    <h1 class='card-heading'>${title}</h1>
+                    <p class='card-text'>${desc.slice(0, 100)} ...</p>
                     <ul class='card-languages-list'>
                       ${languagesArr}
                     </ul>
                     <button
                       class='btn-block btn-primary btn'
-                      onclick='otherModal(${card.id})'
+                      onclick='otherModal(${id})'
                     >
                       See Project
                     </button>
@@ -150,27 +162,23 @@ document.addEventListener("DOMContentLoaded", () => {
     modalDetails += `
                     <div class='modal'>
                       <div class='modal-header'>
-                        <h1>${mainCardDetails.title}</h1>
+                        <h1>${title}</h1>
                         <ion-icon name='close' class='modal-close-icon'></ion-icon>
                       </div>
                       <ul class='modal-languages-list'>
-                        ${mainCardDetails.languages.map(
-    (lang) => `<li>${lang}</li>`,
-  )}
+                        ${languages.map((lang) => `<li>${lang}</li>`)}
                       </ul>
                       <div class='modal-content'>
                         <div class='modal-image-mobile'>
-                          <img src='${mainCardDetails.img}' alt='modal image' />
+                          <img src='${img}' alt='modal image' />
                         </div>
                         <div class='modal-image-desktop'>
-                          <img src='${mainCardDetails.img}' alt='modal image' />
+                          <img src='${img}' alt='modal image' />
                         </div>
-                        <p class='title'>${mainCardDetails.desc}</p>
+                        <p class='title'>${desc}</p>
                       </div>
                       <div class='buttons'>
-                        <a href='${
-  mainCardDetails.live
-}' class='btn-primary' target='_blank'>
+                        <a href='${live}' class='btn-primary' target='_blank'>
                           See Live
                           <span>
                             <img  src='./assets/images/Icon-Export.svg'
@@ -179,9 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                   height='18'/>
                             </span>
                         </a>
-                        <a href='${
-  mainCardDetails.source
-}' class='btn-primary' target='_blank'>
+                        <a href='${source}' class='btn-primary' target='_blank'>
                           See Source
                           <span>
                           <img  src='./assets/images/Icon-GitHub.svg'

@@ -80,8 +80,8 @@ a {
   margin-right: 34px;
 }
 
-.envelope {
-  display: none;
+.nav-link a:hover {
+  color: var(--orangeColor);
 }
 
 .logo {
@@ -326,6 +326,7 @@ a {
 
 .card-desktop {
   display: none;
+  border-radius: 10px;
 }
 
 .card-desktop:hover {
@@ -347,6 +348,7 @@ a {
   align-self: flex-start;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .card img {
@@ -412,6 +414,11 @@ a {
   line-height: 20px;
   margin-right: 5px;
   padding: 5px;
+}
+
+.card-info button {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 
 /* ==========================
@@ -744,6 +751,7 @@ button:disabled {
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
 }
 
 .modal {
@@ -757,6 +765,7 @@ button:disabled {
   animation-name: modalanimation;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  border-radius: 10px;
 }
 
 @-webkit-keyframes modalanimation {
@@ -943,7 +952,10 @@ button:disabled {
   .navbar {
     display: block;
     height: 60px;
-    position: relative;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
     transform: none;
     opacity: inherit;
     visibility: visible;
@@ -953,6 +965,7 @@ button:disabled {
   .nav-flex {
     height: 60px;
     justify-content: flex-end;
+    align-items: center;
     margin-right: 150px;
     flex-direction: row;
     padding-top: 10px;
@@ -1414,6 +1427,10 @@ button:disabled {
   /* ==========================
             Modal
   ========================= */
+  .modal-container {
+    overflow-y: hidden;
+  }
+
   .modal {
     width: 1000px;
     max-width: calc(100% - 20px);
