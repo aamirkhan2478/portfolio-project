@@ -105,6 +105,15 @@ document.addEventListener("DOMContentLoaded", () => {
       source: "https://github.com/edi-sipka/meals_capstone",
       img: "./assets/images/meals-capstone.png",
     },
+    {
+      id: 6,
+      title: "Math Magicians",
+      desc: "This is simple math expression project that can be used to evaluate complex numbers using mathematical expressions like Mathematically complex",
+      languages: ["React JS"],
+      live: "https://my-math-magicians.netlify.app/",
+      source: "https://github.com/aamirkhan2478/math-magicians-react",
+      img: "./assets/images/math-magicians.png",
+    },
   ];
 
   // Fetch all cards details from cardsDetails array of objects
