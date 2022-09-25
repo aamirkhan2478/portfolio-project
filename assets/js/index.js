@@ -26,13 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
     desc: "Degree tracking system will allow the students to track their degree and check the status of their application of degree. This will facilitate both the students and the university administration. In past the process of applying and receiving the degree was manual. That takes lot of time and many students have to come to university again and again to check the status of their degree but this system will allow the students to check their degree status by sitting at home.",
     languages: ["MongoDB", "NodeJS", "ExpressJS", "ReactJS"],
     live: "https://dtvsforfuuast.herokuapp.com/",
-    source: "#",
+    source: "https://github.com/aamirkhan2478/fuudtvs.git",
     img: "./assets/images/Cardimage.png",
   };
 
-  const {
-    title, desc, languages, live, source, img,
-  } = mainCardDetails;
+  const { title, desc, languages, live, source, img } = mainCardDetails;
   // Get all data from languages array in side mainCardDetails object
   const languagesArr = languages.map((language) => `<li>${language}</li>`);
 
@@ -109,19 +107,26 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 6,
       title: "Math Magicians",
       desc: "This is simple math expression project that can be used to evaluate complex numbers using mathematical expressions like Mathematically complex",
-      languages: ["React JS"],
+      languages: ["React JS", "React Router Dom"],
       live: "https://my-math-magicians.netlify.app/",
       source: "https://github.com/aamirkhan2478/math-magicians-react",
       img: "./assets/images/math-magicians.png",
+    },
+    {
+      id: 7,
+      title: "Book Store",
+      desc: "This is simple react web application we store some books and check the list of books by using API and also we remove unwanted books from lists.",
+      languages: ["React JS", "Redux Toolkit", "React Router Dom"],
+      live: "https://aamir-book-store.netlify.app/",
+      source: "https://github.com/aamirkhan2478/book-store-react.git",
+      img: "./assets/images/book-store.png",
     },
   ];
 
   // Fetch all cards details from cardsDetails array of objects
   let cardData = "";
   cardDetails.map((card) => {
-    const {
-      id, img, title, desc, languages,
-    } = card;
+    const { id, img, title, desc, languages } = card;
     // Fetch languages array from a languages object
     const languagesArr = languages.map((lang) => `<li>${lang}</li>`);
     // Add dynamic in other cards
@@ -246,8 +251,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class='buttons'>
                       <a href='${
-  data.live
-}' class='btn-primary' target='_blank'>
+                        data.live
+                      }' class='btn-primary' target='_blank'>
                           See Live
                           <span>
                             <img  src='./assets/images/Icon-Export.svg'
@@ -257,8 +262,8 @@ document.addEventListener("DOMContentLoaded", () => {
                           </span>
                       </a>
                       <a href='${
-  data.source
-}' class='btn-primary' target='_blank'>
+                        data.source
+                      }' class='btn-primary' target='_blank'>
                         See Source
                         <span>
                           <img  src='./assets/images/Icon-GitHub.svg'
