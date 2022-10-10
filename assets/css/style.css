@@ -689,12 +689,14 @@ a {
   border: 1px solid var(--orangeColor);
   padding: 12px;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn-primary:hover {
   background-color: #fff5e1;
   border: 1px solid var(--orangeColor);
   color: var(--orangeColor);
+  border-radius: 200px;
 }
 
 .btn-primary:active {
