@@ -25,14 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     title: "Degree Tracking System",
     desc: "Degree tracking system will allow the students to track their degree and check the status of their application of degree. This will facilitate both the students and the university administration. In past the process of applying and receiving the degree was manual. That takes lot of time and many students have to come to university again and again to check the status of their degree but this system will allow the students to check their degree status by sitting at home.",
     languages: ["MongoDB", "NodeJS", "ExpressJS", "ReactJS"],
-    live: "https://dtvsforfuuast.herokuapp.com/",
+    live: "https://fuudtvs.netlify.app/",
     source: "https://github.com/aamirkhan2478/fuudtvs.git",
     img: "./assets/images/Cardimage.png",
   };
 
-  const {
-    title, desc, languages, live, source, img,
-  } = mainCardDetails;
+  const { title, desc, languages, live, source, img } = mainCardDetails;
   // Get all data from languages array in side mainCardDetails object
   const languagesArr = languages
     .map((language) => `<li>${language}</li>`)
@@ -134,14 +132,21 @@ document.addEventListener("DOMContentLoaded", () => {
       source: "https://github.com/aamirkhan2478/space-traveler-hub.git",
       img: "./assets/images/rockets-page.png",
     },
+    {
+      id: 9,
+      title: "Budget App",
+      desc: "This is simple ROR budget app. You can login to your account and see your budget. You can also add and manage budgets. This is mobile version app so open on inspect or on your mobile.",
+      languages: ["Ruby On Rails", "PostgreSql"],
+      live: "https://my-budget-app.herokuapp.com/",
+      source: "https://github.com/aamirkhan2478/budget-app.git",
+      img: "./assets/images/budget-app.png",
+    },
   ];
 
   // Fetch all cards details from cardsDetails array of objects
   let cardData = "";
   cardDetails.map((card) => {
-    const {
-      id, img, title, desc, languages,
-    } = card;
+    const { id, img, title, desc, languages } = card;
     // Fetch languages array from a languages object
     const languagesArr = languages.map((lang) => `<li>${lang}</li>`).join("");
     // Add dynamic in other cards
@@ -254,8 +259,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <ul class='modal-languages-list'>
                       ${data.languages
-    .map((lang) => `<li>${lang}</li>`)
-    .join("")}
+                        .map((lang) => `<li>${lang}</li>`)
+                        .join("")}
                     </ul>
                     <div class='modal-content'>
                       <div class='modal-image-mobile'>
@@ -268,8 +273,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class='buttons'>
                       <a href='${
-  data.live
-}' class='btn-primary' target='_blank'>
+                        data.live
+                      }' class='btn-primary' target='_blank'>
                           See Live
                           <span>
                             <img  src='./assets/images/Icon-Export.svg'
@@ -279,8 +284,8 @@ document.addEventListener("DOMContentLoaded", () => {
                           </span>
                       </a>
                       <a href='${
-  data.source
-}' class='btn-primary' target='_blank'>
+                        data.source
+                      }' class='btn-primary' target='_blank'>
                         See Source
                         <span>
                           <img  src='./assets/images/Icon-GitHub.svg'
