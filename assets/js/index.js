@@ -141,6 +141,15 @@ document.addEventListener("DOMContentLoaded", () => {
       source: "https://github.com/aamirkhan2478/budget-app.git",
       img: "./assets/images/budget-app.png",
     },
+    {
+      id: 10,
+      title: "El Dorado",
+      desc: "El Dorado Frontend is a luxury car rental application where the user can register new accounts, login and reserve a set of different cars.",
+      languages: ["Ruby On Rails", "PostgreSql", "React JS"],
+      live: "https://eldorado-rentals.netlify.app/",
+      source: "https://github.com/aamirkhan2478/ElDorado-Frontend.git",
+      img: "./assets/images/eldorado.png",
+    },
   ];
 
   // Fetch all cards details from cardsDetails array of objects
