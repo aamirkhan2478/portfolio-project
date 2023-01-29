@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
     img: "./assets/images/Cardimage.png",
   };
 
-  const { title, desc, languages, live, source, img } = mainCardDetails;
+  const {
+    title, desc, languages, live, source, img,
+  } = mainCardDetails;
   // Get all data from languages array in side mainCardDetails object
   const languagesArr = languages
     .map((language) => `<li>${language}</li>`)
@@ -155,7 +157,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Fetch all cards details from cardsDetails array of objects
   let cardData = "";
   cardDetails.map((card) => {
-    const { id, img, title, desc, languages } = card;
+    const {
+      id, img, title, desc, languages,
+    } = card;
     // Fetch languages array from a languages object
     const languagesArr = languages.map((lang) => `<li>${lang}</li>`).join("");
     // Add dynamic in other cards
@@ -268,8 +272,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <ul class='modal-languages-list'>
                       ${data.languages
-                        .map((lang) => `<li>${lang}</li>`)
-                        .join("")}
+    .map((lang) => `<li>${lang}</li>`)
+    .join("")}
                     </ul>
                     <div class='modal-content'>
                       <div class='modal-image-mobile'>
@@ -282,8 +286,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class='buttons'>
                       <a href='${
-                        data.live
-                      }' class='btn-primary' target='_blank'>
+  data.live
+}' class='btn-primary' target='_blank'>
                           See Live
                           <span>
                             <img  src='./assets/images/Icon-Export.svg'
@@ -293,8 +297,8 @@ document.addEventListener("DOMContentLoaded", () => {
                           </span>
                       </a>
                       <a href='${
-                        data.source
-                      }' class='btn-primary' target='_blank'>
+  data.source
+}' class='btn-primary' target='_blank'>
                         See Source
                         <span>
                           <img  src='./assets/images/Icon-GitHub.svg'
@@ -413,3 +417,34 @@ const resetFrom = (e) => {
 };
 
 reset.addEventListener("click", resetFrom);
+
+// Select all the sections and nav links
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+// Add an event listener to the window that listens for a scroll event
+document.addEventListener("scroll", () => {
+  // Get the current position of the window
+  const currentPosition = window.scrollY + 80;
+  // Loop through all the sections
+  sections.forEach((section) => {
+    // Check if the current position is within the section
+    if (
+      section.offsetTop <= currentPosition
+      && section.offsetTop + section.offsetHeight > currentPosition
+    ) {
+      // Loop through all the nav links
+      navLinks.forEach((link) => {
+        // Remove the active class from all the nav links
+        link.classList.remove("nav-active");
+        // Check if the section id is the same as the nav link href
+        if (
+          section.getAttribute("id") === link.getAttribute("href").substring(1)
+        ) {
+          // Add the active class to the nav link
+          link.classList.add("nav-active");
+        }
+      });
+    }
+  });
+});

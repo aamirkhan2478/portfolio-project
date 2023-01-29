@@ -85,6 +85,11 @@ a {
   color: var(--orangeColor);
 }
 
+.nav-link .nav-active {
+  color: var(--orangeColor);
+  border-bottom: 1px dashed var(--orangeColor);
+}
+
 .logo {
   font-family: var(--roboto);
   text-decoration: none;
@@ -138,8 +143,8 @@ a {
   gap: 12px;
 }
 
-.intro-portion{
-  margin-top:100px ;
+.intro-portion {
+  margin-top: 100px;
 }
 
 .hero-section a {
@@ -556,8 +561,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
-  margin-bottom: 124px;
+  margin-top: 150px;
+  margin-bottom: 300px;
 }
 
 .contact-heading {
@@ -666,7 +671,6 @@ a {
   width: 40px;
   height: 40px;
 }
-
 
 /* ==========================
         Button Styles
@@ -896,7 +900,6 @@ button:disabled {
   display: none;
 }
 
-
 /* ===========================
           ScrollBar
 =========================== */
@@ -975,15 +978,6 @@ button:disabled {
     color: white;
     margin-left: 8px;
     margin-right: 34px;
-  }
-
-  .envelope {
-    display: block;
-    background-image: url("../images/mail.svg");
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-    margin-top: 10px;
   }
 
   /* ==========================
@@ -1235,7 +1229,6 @@ button:disabled {
     height: 160px;
     width: 160px;
     margin: 0 0 200px 473px;
-    
   }
 
   /* ==========================
