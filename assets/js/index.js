@@ -347,45 +347,70 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Form Validation
 const email = document.getElementById("email");
+const fullName = document.getElementById("fullName");
+const message = document.getElementById("message");
 const submit = document.getElementById("submit");
 const alert = document.getElementById("alert-danger");
 
 const submitForm = (e) => {
-  const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-  const str = email.value;
-  if (str === str.toLowerCase()) {
-    if (regex.test(str)) {
-      alert.classList.remove("show-alert");
-    } else {
-      e.preventDefault();
-      alert.classList.add("show-alert");
-      alert.innerHTML = `
-          <span>
-            <ion-icon name="close-circle" class="alert-icon"></ion-icon>
-          </span>
-          You enter invalid email address!
-    `;
-    }
-  } else {
-    e.preventDefault();
+  e.preventDefault();
+  const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/;
+  const emailValue = email.value;
+  const nameValue = fullName.value;
+  const messageValue = message.value;
+
+  const showAlert = (message) => {
     alert.classList.add("show-alert");
-    alert.innerHTML = `
-          <span>
-            <ion-icon name="close-circle" class="alert-icon"></ion-icon>
-          </span>
-          Please enter lowercase letters.
-    `;
+    if (message === "Message sent successfully!") {
+      alert.innerHTML = `<span> <ion-icon name="checkmark" class="alert-icon"></ion-icon> </span> ${message}`;
+    } else {
+      alert.innerHTML = `<span> <ion-icon name="close-circle" class="alert-icon"></ion-icon> </span> ${message}`;
+    }
+    setTimeout(() => {
+      alert.classList.remove("show-alert");
+      alert.classList.remove("alert-success");
+    }, 2500);
+  };
+
+  if (!nameValue || !emailValue || !messageValue) {
+    showAlert("Please enter all required fields");
+    return;
   }
-  setTimeout(() => {
-    alert.classList.remove("show-alert");
-  }, 2500);
+
+  if (emailValue !== emailValue.toLowerCase()) {
+    showAlert("Please enter lowercase letters.");
+    return;
+  }
+
+  if (!regex.test(emailValue)) {
+    showAlert("Invalid email address!");
+    return;
+  }
+
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "aamir.khan2478@gmail.com",
+    Password: "660EC2AB2AB9343D6BE9C8AED37DDD75DF15",
+    To: "aamir.khan2478@gmail.com",
+    From: "aamir.khan2478@gmail.com",
+    Subject: "Contact Information",
+    Body: `Name: ${nameValue} <br/> Email: ${emailValue} <br/> Message: ${messageValue}`,
+  }).then((msg) => {
+    if (msg === "OK") {
+      alert.classList.add("show-alert");
+      alert.classList.add("alert-success");
+      showAlert("Message sent successfully!");
+    }
+    email.value = "";
+    fullName.value = "";
+    message.value = "";
+    localStorage.removeItem("user");
+  });
 };
 
 submit.addEventListener("click", submitForm);
 
 // Store data in localStorage
-const fullName = document.getElementById("fullName");
-const message = document.getElementById("message");
 const reset = document.getElementById("reset");
 
 changeHandler = () => {
