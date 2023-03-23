@@ -152,6 +152,15 @@ document.addEventListener("DOMContentLoaded", () => {
       source: "https://github.com/aamirkhan2478/ElDorado-Frontend.git",
       img: "./assets/images/eldorado.png",
     },
+    {
+      id: 11,
+      title: "Chakra Chat",
+      desc: "Chakra chat is a chat application that allows you to chat with others ans also create a new group and connect with others.",
+      languages: ["Node", "MongoDB", "React", "Express"],
+      live: "https://my-chakra-chat.netlify.app/",
+      source: "https://github.com/aamirkhan2478/chakra-chat-frontend",
+      img: "./assets/images/chakra-chat.png",
+    },
   ];
 
   // Fetch all cards details from cardsDetails array of objects
